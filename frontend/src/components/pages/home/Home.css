@@ -1,0 +1,13 @@
+@layer variation {
+  .home {
+    /* --accent-color: #d67600; */
+    &::before {
+      --glow-size: 40;
+    }
+  }
+
+  .nav {
+    align-self: end;
+    padding-bottom: var(--gap);
+  }
+}

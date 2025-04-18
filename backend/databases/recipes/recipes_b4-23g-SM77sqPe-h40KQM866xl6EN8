@@ -1,0 +1,67 @@
+{
+  "category": "recipes",
+  "id": "recipes_b4-23g-SM77sqPe-h40KQM866xl6EN8",
+  "ingredients": [
+    {
+      "name": "egg",
+      "id": "egg",
+      "amount": 1,
+      "unit": "piece"
+    },
+    {
+      "name": "water",
+      "id": "water",
+      "amount": 1,
+      "unit": "l"
+    },
+    {
+      "name": "salt",
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": "Optional"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "Place egg in a pot and cover with cold water. Add salt (optional)."
+    },
+    {
+      "step": 2,
+      "description": "Bring water to a rolling boil.",
+      "time": 60
+    },
+    {
+      "step": 3,
+      "description": "Once boiling, remove from heat and cover the pot.",
+      "time": 600
+    },
+    {
+      "step": 4,
+      "description": "Drain the hot water and run cold water over the egg until it's cool enough to handle."
+    },
+    {
+      "step": 5,
+      "description": "Gently tap the egg all over on a hard surface to crack the shell."
+    },
+    {
+      "step": 6,
+      "description": "Peel the egg under cold running water."
+    }
+  ],
+  "name": "boiled egg",
+  "preparationTime": {
+    "total": 12,
+    "unit": "min"
+  },
+  "source": "https://www.youtube.com/watch?v=Cyskqnp1j64&lc=UgwZl55YCjBX1f-wt7h4AaABAg",
+  "tags": [
+    "egg",
+    "breakfast",
+    "easy",
+    "protein"
+  ],
+  "author": "Serious Eats",
+  "description": "A simple recipe for perfectly boiled eggs."
+}

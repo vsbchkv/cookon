@@ -1,0 +1,31 @@
+@layer theme {
+  @layer light, dark, userchrome;
+
+  @layer theme.light {
+    :root {
+      --color: #222;
+      --bg-color: #ccc;
+      --accent-color: #222;
+      --bg-lightness: 50%;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @layer theme.dark {
+      :root {
+        --color: #fcfcfc;
+        --alpha: 1;
+
+        /* --ts-offset-x: -2px; */
+        /* --ts-offset-y: 2px; */
+        --text-blur: 4px;
+        --bg-color: #111;
+        --bg-lightness: 30%;
+        --accent-color: #fff;
+      }
+    }
+  }
+
+  /* @layer theme.userchrome {
+  } */
+}

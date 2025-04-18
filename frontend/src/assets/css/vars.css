@@ -1,0 +1,9 @@
+@layer base {
+  :root {
+    --font-family: 'Rubik', sans-serif;
+    --gap: 8px;
+    --text-blur: 6px;
+    --color-default: oklch(from var(--color) var(--l, l) var(--c, c) var(--h, h) / var(--a, 1));
+    --ts-color-default: currentcolor;
+  }
+}

@@ -1,0 +1,10 @@
+@layer variation {
+  .shopping {
+    --glow-angle: 20;
+
+    /* --glow-l: 5%;
+      --glow-l: 30%;
+      --glow-c: 100%; */
+    --accent-color: #0f1;
+  }
+}

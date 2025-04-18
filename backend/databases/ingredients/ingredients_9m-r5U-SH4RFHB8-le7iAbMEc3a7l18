@@ -1,0 +1,35 @@
+{
+  "calories": 255,
+  "category": "ingredients",
+  "id": "ingredients_9m-r5U-SH4RFHB8-le7iAbMEc3a7l18",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 63.9,
+      "fiber": 25.3,
+      "sugars": 0.9
+    },
+    "fat": {
+      "total": 3.3,
+      "saturated": 1.4,
+      "unsaturated": 1.9
+    },
+    "protein": 10.4
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 443,
+      "iron": 9.7,
+      "potassium": 1329
+    },
+    "vitamins": {
+      "vitaminA": 75,
+      "vitaminC": 21
+    }
+  },
+  "name": "black pepper",
+  "tags": [
+    "spice",
+    "seasoning",
+    "pepper"
+  ]
+}
