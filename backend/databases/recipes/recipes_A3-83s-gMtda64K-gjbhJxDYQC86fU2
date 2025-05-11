@@ -1,0 +1,153 @@
+{
+  "author": "Sasha",
+  "category": "recipes",
+  "description": "Deliciously roasted Brussels sprouts with a sweet and savory glaze, optionally enhanced with sausages and melted cheese. A simple and flavorful dish perfect as a side or a light main course.",
+  "id": "recipes_A3-83s-gMtda64K-gjbhJxDYQC86fU2",
+  "ingredients": [
+    {
+      "name": "brussels sprouts",
+      "id": "brussels_sprouts",
+      "amount": 500,
+      "unit": "g",
+      "notes": "Fresh, young sprouts are ideal."
+    },
+    {
+      "name": "olive oil",
+      "id": "olive_oil",
+      "amount": 3,
+      "unit": "tbsp"
+    },
+    {
+      "name": "balsamic vinegar",
+      "id": "balsamic_vinegar",
+      "amount": 2,
+      "unit": "tsp",
+      "notes": "Worcestershire sauce can be used as an alternative."
+    },
+    {
+      "name": "maple syrup",
+      "id": "maple_syrup",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": "Honey can be used as an alternative."
+    },
+    {
+      "name": "fresh oregano, chopped",
+      "id": "fresh_oregano",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "fresh lemon thyme, chopped",
+      "id": "fresh_lemon_thyme",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "salt",
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": "Or to taste."
+    },
+    {
+      "name": "black pepper, freshly ground",
+      "id": "black_pepper",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": "Or to taste."
+    },
+    {
+      "name": "chilli flakes",
+      "id": "chilli_flakes_optional",
+      "amount": 0.25,
+      "unit": "tsp",
+      "notes": "Optional, for extra spice."
+    },
+    {
+      "name": "sausages",
+      "id": "sausages_optional",
+      "amount": 4,
+      "unit": "pieces",
+      "notes": "Optional. e.g., maple-flavored or spicy breakfast sausages."
+    },
+    {
+      "name": "aged cheddar cheese, grated",
+      "id": "aged_cheddar_cheese_optional",
+      "amount": 50,
+      "unit": "g",
+      "notes": "Optional. Gruyère, Emmental, Feta, or blue cheese can be used as alternatives."
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "Preheat your oven to 200°C (400°F).",
+      "temperature": {
+        "value": 200,
+        "unit": "C"
+      }
+    },
+    {
+      "step": 2,
+      "description": "Wash the Brussels sprouts thoroughly under cold running water."
+    },
+    {
+      "step": 3,
+      "description": "Trim the woody ends of the Brussels sprouts. Cut each sprout in half lengthwise. If any outer leaves are wilted or significantly damaged, remove them. Place the halved sprouts into a large mixing bowl."
+    },
+    {
+      "step": 4,
+      "description": "To the bowl with the Brussels sprouts, add the olive oil, balsamic vinegar (or Worcestershire sauce as an alternative), maple syrup (or honey), chopped fresh oregano, and chopped fresh lemon thyme. Season with salt and freshly ground black pepper. If you like a bit of heat, add the optional chili flakes."
+    },
+    {
+      "step": 5,
+      "description": "Gently toss all the ingredients together with the Brussels sprouts, ensuring they are evenly and thoroughly coated with the oil and seasonings."
+    },
+    {
+      "step": 6,
+      "description": "Line a large baking sheet with parchment paper. This helps with easy cleanup and prevents sticking."
+    },
+    {
+      "step": 7,
+      "description": "Spread the seasoned Brussels sprouts in a single, even layer on the prepared baking sheet. Avoid overcrowding the pan, as this will steam the sprouts rather than roast them; use two baking sheets if necessary."
+    },
+    {
+      "step": 8,
+      "description": "(Optional) If using sausages, slice them into small, bite-sized pieces. Scatter these pieces amongst the Brussels sprouts on the baking sheet."
+    },
+    {
+      "step": 9,
+      "description": "(Optional) If using cheese, grate your chosen cheese (e.g., aged Cheddar, Gruyère, Emmental, Feta, or blue cheese) and sprinkle it evenly over the Brussels sprouts and sausages."
+    },
+    {
+      "step": 10,
+      "description": "Place the baking sheet into the preheated oven. Roast at 200°C (400°F) for 25-30 minutes. The Brussels sprouts should be tender when pierced with a fork, nicely browned, and slightly caramelized at the edges. If you added cheese, it should be melted and golden.",
+      "time": 30,
+      "temperature": {
+        "value": 200,
+        "unit": "C"
+      }
+    },
+    {
+      "step": 11,
+      "description": "Once roasted to perfection, carefully remove the baking sheet from the oven. (Optional) Garnish with a little more fresh herbs like oregano or thyme for extra freshness. Serve immediately while hot."
+    }
+  ],
+  "name": "roasted brussels sprouts in the oven",
+  "preparationTime": {
+    "total": 15,
+    "unit": "min"
+  },
+  "source": "https://www.youtube.com/watch?v=BNeKW6pEf3M",
+  "tags": [
+    "brussels sprouts",
+    "roasted",
+    "oven-baked",
+    "vegetable",
+    "side dish",
+    "easy recipe",
+    "healthy",
+    "canadian cuisine"
+  ]
+}

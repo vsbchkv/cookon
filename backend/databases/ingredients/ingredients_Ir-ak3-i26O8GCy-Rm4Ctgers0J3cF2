@@ -1,0 +1,36 @@
+{
+  "calories": 313,
+  "category": "ingredients",
+  "id": "ingredients_Ir-ak3-i26O8GCy-Rm4Ctgers0J3cF2",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 67.1,
+      "fiber": 48,
+      "sugars": 2.5
+    },
+    "fat": {
+      "total": 8.4,
+      "saturated": 2.4,
+      "unsaturated": 6
+    },
+    "protein": 7.6
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 834,
+      "iron": 43,
+      "potassium": 529
+    },
+    "vitamins": {
+      "vitaminA": 12000,
+      "vitaminC": 46.5
+    }
+  },
+  "name": "bay leaf",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "herb",
+    "spice",
+    "aromatic"
+  ]
+}

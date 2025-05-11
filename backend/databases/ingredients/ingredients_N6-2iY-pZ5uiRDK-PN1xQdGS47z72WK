@@ -1,0 +1,35 @@
+{
+  "calories": 280,
+  "category": "ingredients",
+  "id": "ingredients_N6-2iY-pZ5uiRDK-PN1xQdGS47z72WK",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 0,
+      "total": 0
+    },
+    "fat": {
+      "saturated": 0,
+      "total": 0,
+      "unsaturated": 0
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 0,
+      "iron": 0,
+      "potassium": 0
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "vodka",
+  "source": "USDA Database",
+  "tags": [
+    "alcohol",
+    "spirit"
+  ]
+}

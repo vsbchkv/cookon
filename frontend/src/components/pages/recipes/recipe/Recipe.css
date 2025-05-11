@@ -1,0 +1,41 @@
+@layer components {
+  .recipe,
+  .recipe-section {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .recipe {
+    align-self: start;
+  }
+
+  .recipe-section {
+    --glow-spread: 1;
+
+    padding: var(--gap);
+    background-color: oklch(from var(--bg-color) var(--bg-lightness, l) c h);
+    border-radius: calc(var(--layout-border-radius) - var(--gap));
+  }
+
+  .recipe-list {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .recipe-list--ingredients {
+    grid-template-columns: 1fr auto;
+    gap: calc(var(--gap) / 2);
+  }
+
+  .recipe-list-term {
+    font-weight: 600;
+  }
+
+  .recipe-list-description {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    gap: calc(var(--gap) / 2);
+    font-style: italic;
+    font-weight: 500;
+  }
+}

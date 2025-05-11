@@ -1,0 +1,36 @@
+{
+  "calories": 884,
+  "category": "ingredients",
+  "id": "ingredients_yd-08C-5VGaQ66P-E4RzVL8KXuc2ZeQ",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 0,
+      "sugars": 0,
+      "fiber": 0
+    },
+    "fat": {
+      "total": 100,
+      "saturated": 13,
+      "unsaturated": 87
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 0,
+      "iron": 0,
+      "potassium": 0
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "vegetable oil",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "oil",
+    "cooking",
+    "fat"
+  ]
+}

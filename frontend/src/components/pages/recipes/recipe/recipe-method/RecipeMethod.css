@@ -1,0 +1,63 @@
+@layer components {
+  .recipe-method {
+    display: grid;
+    gap: calc(var(--gap) / 2);
+  }
+
+  .action-panel {
+    display: grid;
+    font-size: 0.8rem;
+    grid-template-columns: repeat(3, 1fr) auto;
+    grid-template-rows: 1fr auto;
+  }
+
+  .action-panel-btn {
+    background-color: var(--color-primary);
+    grid-row: 2;
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .action-panel-btn:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .action-panel-complete {
+    grid-column: -1;
+    grid-row: span 2;
+  }
+
+  .time {
+    &.completed {
+      background-color: green;
+    }
+
+    &.error {
+      background-color: red;
+    }
+  }
+
+  .timer-progress {
+    appearance: progress-bar;
+    border-radius: 20px;
+    height: 5px;
+    background: currentcolor;
+
+    &[value]::-moz-progress-bar {
+      background-color: var(--accent-color);
+    }
+
+    &[value]::-webkit-progress-bar {
+      background-color: transparent;
+    }
+
+    &[value]::-webkit-progress-value {
+      background-color: var(--accent-color);
+      border-radius: 20px;
+    }
+  }
+}

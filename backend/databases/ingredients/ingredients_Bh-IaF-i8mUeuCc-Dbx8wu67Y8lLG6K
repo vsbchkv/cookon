@@ -1,0 +1,36 @@
+{
+  "id": "ingredients_Bh-IaF-i8mUeuCc-Dbx8wu67Y8lLG6K",
+  "name": "dry yeast",
+  "category": "ingredients",
+  "calories": 325,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 46.84,
+      "sugars": 0,
+      "fiber": 24.6
+    },
+    "fat": {
+      "total": 5.82,
+      "saturated": 0.85,
+      "unsaturated": 0
+    },
+    "protein": 51.76
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 64,
+      "iron": 12,
+      "potassium": 870
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "source": "USDA FoodData Central",
+  "tags": [
+    "baking",
+    "leavening agent",
+    "ingredient"
+  ]
+}

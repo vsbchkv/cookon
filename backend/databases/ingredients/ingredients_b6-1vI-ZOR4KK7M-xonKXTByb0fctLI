@@ -1,0 +1,35 @@
+{
+  "calories": 149,
+  "category": "ingredients",
+  "id": "ingredients_b6-1vI-ZOR4KK7M-xonKXTByb0fctLI",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 33.06,
+      "fiber": 2.1,
+      "sugars": 1
+    },
+    "fat": {
+      "total": 0.5,
+      "saturated": 0.08,
+      "unsaturated": 0
+    },
+    "protein": 6.36
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 18,
+      "iron": 1.7,
+      "potassium": 401
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 31.2
+    }
+  },
+  "name": "garlic",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "vegetable",
+    "aromatic"
+  ]
+}

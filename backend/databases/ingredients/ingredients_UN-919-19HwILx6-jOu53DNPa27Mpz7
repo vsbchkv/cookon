@@ -1,0 +1,35 @@
+{
+  "calories": 884,
+  "category": "ingredients",
+  "id": "ingredients_UN-919-19HwILx6-jOu53DNPa27Mpz7",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 0,
+      "total": 0
+    },
+    "fat": {
+      "saturated": 13.8,
+      "total": 100,
+      "unsaturated": 73
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 0,
+      "iron": 0,
+      "potassium": 0
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "olive oil",
+  "tags": [
+    "oil",
+    "cooking",
+    "healthy fat"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "calories": 40,
+  "category": "ingredients",
+  "id": "ingredients_Yc-bc1-YH6n4BLn-LOjPdXD5l3g8Z3Z",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 1.7,
+      "sugars": 4.2,
+      "total": 9.3
+    },
+    "fat": {
+      "saturated": 0.1,
+      "total": 0.1,
+      "unsaturated": 0
+    },
+    "protein": 1.1
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 23,
+      "iron": 0.2,
+      "potassium": 180
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 7.4
+    }
+  },
+  "name": "onion",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "vegetable",
+    "allium",
+    "bulb"
+  ]
+}

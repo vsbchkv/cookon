@@ -1,0 +1,36 @@
+{
+  "calories": 60,
+  "category": "ingredients",
+  "id": "ingredients_UZ-6Hu-SpGpho9Y-FXSXzAkiz8Ngdv6",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 15,
+      "fiber": 1.6,
+      "sugars": 13
+    },
+    "fat": {
+      "total": 0.3,
+      "saturated": 0.1,
+      "unsaturated": 0.2
+    },
+    "protein": 0.5
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 9,
+      "iron": 0.2,
+      "potassium": 168
+    },
+    "vitamins": {
+      "vitaminA": 890,
+      "vitaminC": 36.4
+    }
+  },
+  "name": "mango pulp",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "fruit",
+    "pulp",
+    "mango"
+  ]
+}

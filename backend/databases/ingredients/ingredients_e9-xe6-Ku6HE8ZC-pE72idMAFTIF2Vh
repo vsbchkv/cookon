@@ -1,0 +1,35 @@
+{
+  "calories": 402,
+  "category": "ingredients",
+  "id": "ingredients_e9-xe6-Ku6HE8ZC-pE72idMAFTIF2Vh",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 0,
+      "total": 2.5
+    },
+    "fat": {
+      "saturated": 24,
+      "total": 33,
+      "unsaturated": 0
+    },
+    "protein": 25
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 721,
+      "iron": 0.3,
+      "potassium": 100
+    },
+    "vitamins": {
+      "vitaminA": 1000,
+      "vitaminC": 0
+    }
+  },
+  "name": "aged cheddar cheese, grated",
+  "tags": [
+    "cheese",
+    "dairy",
+    "grated"
+  ]
+}

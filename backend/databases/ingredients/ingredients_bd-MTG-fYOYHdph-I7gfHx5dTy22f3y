@@ -1,0 +1,36 @@
+{
+  "calories": 25,
+  "category": "ingredients",
+  "id": "ingredients_bd-MTG-fYOYHdph-I7gfHx5dTy22f3y",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 2,
+      "sugars": 1,
+      "total": 5
+    },
+    "fat": {
+      "saturated": 0.1,
+      "total": 0.6,
+      "unsaturated": 0.5
+    },
+    "protein": 1.2
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 60,
+      "iron": 3,
+      "potassium": 250
+    },
+    "vitamins": {
+      "vitaminA": 750,
+      "vitaminC": 20
+    }
+  },
+  "name": "fresh dill",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "herb",
+    "fresh",
+    "dill"
+  ]
+}

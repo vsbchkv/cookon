@@ -1,0 +1,3 @@
+/* Global css layers */
+
+@layer userchrome, reset, base, theme, component, variation;

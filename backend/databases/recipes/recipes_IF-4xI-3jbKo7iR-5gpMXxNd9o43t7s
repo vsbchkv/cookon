@@ -1,0 +1,83 @@
+{
+  "category": "recipes",
+  "id": "recipes_IF-4xI-3jbKo7iR-5gpMXxNd9o43t7s",
+  "ingredients": [
+    {
+      "name": "eggs",
+      "id": "egg-001",
+      "amount": 2,
+      "unit": "pieces",
+      "notes": "Large"
+    },
+    {
+      "name": "butter",
+      "id": "butter-001",
+      "amount": 10,
+      "unit": "g",
+      "notes": "Unsalted"
+    },
+    {
+      "name": "salt",
+      "id": "salt-001",
+      "amount": 1,
+      "unit": "pinch",
+      "notes": "To taste"
+    },
+    {
+      "name": "black pepper",
+      "id": "pepper-001",
+      "amount": 1,
+      "unit": "pinch",
+      "notes": "To taste"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "Whisk eggs with salt and pepper in a bowl.",
+      "time": 2
+    },
+    {
+      "step": 2,
+      "description": "Melt butter in a non-stick pan over medium-low heat.",
+      "time": 2,
+      "temperature": {
+        "value": 150,
+        "unit": "F"
+      }
+    },
+    {
+      "step": 3,
+      "description": "Pour egg mixture into the pan.",
+      "time": 1
+    },
+    {
+      "step": 4,
+      "description": "Gently push the cooked egg from the edges towards the center, tilting the pan to allow uncooked egg to flow underneath.",
+      "time": 3
+    },
+    {
+      "step": 5,
+      "description": "Continue until eggs are cooked to your desired consistency.  Remove from heat.",
+      "time": 1
+    },
+    {
+      "step": 6,
+      "description": "Serve immediately.",
+      "time": 0
+    }
+  ],
+  "name": "scrambled egg",
+  "preparationTime": {
+    "total": 10,
+    "unit": "min"
+  },
+  "author": "AI Recipe Generator",
+  "description": "Simple and delicious scrambled eggs.",
+  "source": "USDA database",
+  "tags": [
+    "breakfast",
+    "easy",
+    "egg"
+  ]
+}

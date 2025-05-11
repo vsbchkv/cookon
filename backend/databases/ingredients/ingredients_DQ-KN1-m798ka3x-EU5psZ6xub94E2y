@@ -1,0 +1,34 @@
+{
+  "calories": 43,
+  "category": "ingredients",
+  "id": "ingredients_DQ-KN1-m798ka3x-EU5psZ6xub94E2y",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 9,
+      "sugars": 2,
+      "fiber": 3.8
+    },
+    "fat": {
+      "total": 0.3,
+      "saturated": 0.06,
+      "unsaturated": 0.18
+    },
+    "protein": 3.4
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 26,
+      "iron": 0.7,
+      "potassium": 238
+    },
+    "vitamins": {
+      "vitaminA": 75,
+      "vitaminC": 85
+    }
+  },
+  "name": "brussels sprouts",
+  "tags": [
+    "vegetable",
+    "cruciferous"
+  ]
+}

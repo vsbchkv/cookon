@@ -1,0 +1,35 @@
+{
+  "calories": 88,
+  "category": "ingredients",
+  "id": "ingredients_hz-X75-d1c6cU1X-pEe1ty9tpRSy9YE",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 17,
+      "total": 17
+    },
+    "fat": {
+      "saturated": 0,
+      "total": 0,
+      "unsaturated": 0
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 10,
+      "iron": 0.5,
+      "potassium": 25
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "balsamic vinegar",
+  "tags": [
+    "vinegar",
+    "condiment",
+    "italian"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "calories": 78,
+  "category": "ingredients",
+  "id": "ingredients_a4-s7S-0s380K86-81QULDfrknV1O36",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 0.6,
+      "sugars": 0,
+      "fiber": 0
+    },
+    "fat": {
+      "total": 5.3,
+      "saturated": 1.6,
+      "unsaturated": 3.2
+    },
+    "protein": 6.3
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 25,
+      "iron": 0.9,
+      "potassium": 63
+    },
+    "vitamins": {
+      "vitaminA": 45,
+      "vitaminC": 0
+    }
+  },
+  "name": "egg",
+  "tags": [
+    "dairy",
+    "protein",
+    "breakfast"
+  ]
+}

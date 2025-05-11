@@ -1,0 +1,35 @@
+{
+  "calories": 283,
+  "category": "ingredients",
+  "id": "ingredients_vf-538-340h8l23-JODyrmboK28a5S3",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 65,
+      "fiber": 42,
+      "sugars": 4
+    },
+    "fat": {
+      "total": 7,
+      "saturated": 2,
+      "unsaturated": 5
+    },
+    "protein": 15
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 1365,
+      "iron": 40,
+      "potassium": 2640
+    },
+    "vitamins": {
+      "vitaminA": 13650,
+      "vitaminC": 112
+    }
+  },
+  "name": "fresh oregano, chopped",
+  "tags": [
+    "herb",
+    "fresh",
+    "chopped"
+  ]
+}

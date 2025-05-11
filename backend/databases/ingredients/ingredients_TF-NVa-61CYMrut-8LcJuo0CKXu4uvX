@@ -1,0 +1,37 @@
+{
+  "calories": 717,
+  "category": "ingredients",
+  "id": "ingredients_TF-NVa-61CYMrut-8LcJuo0CKXu4uvX",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 0,
+      "total": 0
+    },
+    "fat": {
+      "saturated": 51.36,
+      "total": 81.11,
+      "unsaturated": 25.52
+    },
+    "protein": 0.85
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 24,
+      "iron": 0.05,
+      "potassium": 24
+    },
+    "vitamins": {
+      "vitaminA": 2499,
+      "vitaminC": 0
+    }
+  },
+  "name": "unsalted butter",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "dairy",
+    "fat",
+    "cooking",
+    "baking"
+  ]
+}

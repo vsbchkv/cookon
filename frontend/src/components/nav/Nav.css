@@ -1,0 +1,51 @@
+@layer component {
+  .nav {
+    display: grid;
+    grid-area: nav;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .nav-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: calc(var(--gap) * 2);
+  }
+
+  .nav-item {
+    /* padding: var(--gap); */
+  }
+
+  .nav-item--icon {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    .nav-action {
+      display: grid;
+      grid-template-rows: min-content auto;
+      grid-template-areas:
+        'icon'
+        'title';
+      gap: var(--gap);
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      border-radius: inherit;
+    }
+
+    .nav-action {
+      padding: var(--gap);
+    }
+  }
+
+  .nav-icon {
+    width: 100%;
+    height: 100%;
+    transition: fill var(--duration) ease;
+  }
+
+  .nav-icon-svg {
+    fill: var(--accent-color);
+  }
+}

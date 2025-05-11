@@ -1,0 +1,125 @@
+@layer component {
+  .cube {
+    --size-w: calc(100vw - (var(--gap) * 2));
+    --size-h: 100%;
+    --t-z: calc(var(--size-w) / 2);
+    --animaton-duration: 1s;
+    --glow-duration: calc(var(--animaton-duration) / 2);
+
+    position: relative;
+    grid-area: content;
+    width: calc(100vw - (var(--gap) * 2));
+    height: 100%;
+    place-self: center;
+    transform-style: preserve-3d;
+    transition: transform calc(var(--animaton-duration)) ease;
+    transform-origin: center;
+
+    &.back {
+      transform: rotateY(-90deg);
+
+      .cube-side:not(.cube-side--back) {
+        pointer-events: none;
+      }
+    }
+
+    &.left {
+      transform: rotateY(90deg);
+
+      .cube-side:not(.cube-side--left) {
+        pointer-events: none;
+      }
+    }
+
+    &.right {
+      transform: rotateY(180deg);
+
+      .cube-side:not(.cube-side--right) {
+        pointer-events: none;
+      }
+    }
+
+    &.top {
+      transform: rotateX(-180deg);
+
+      .cube-side:not(.cube-side--top) {
+        pointer-events: none;
+      }
+    }
+
+    &.bottom {
+      transform: rotateX(90deg);
+
+      .cube-side:not(.cube-side--bottom) {
+        pointer-events: none;
+      }
+    }
+  }
+
+  .cube-side {
+    position: absolute;
+    display: grid;
+    width: var(--size-w, 100%);
+    height: var(--size-h, 100%);
+    padding: var(--gap);
+    background-color: var(--background-accent);
+    backface-visibility: hidden;
+    transform: rotateX(var(--t-r-x, 0deg)) rotateY(var(--t-r-y, 0deg)) translateZ(var(--t-z));
+    transform-style: preserve-3d;
+    transition: background-color linear var(--animaton-duration, 1s);
+    border-radius: var(--layout-border-radius);
+    border: var(--gap) solid var(--background-accent);
+  }
+
+  .cube-side--home {
+    --t-r-y: 0deg;
+  }
+
+  .cube-side--back {
+    --t-r-y: 90deg;
+  }
+
+  .cube-side--left {
+    --t-r-y: -90deg;
+  }
+
+  .cube-side--right {
+    --t-r-y: 180deg;
+  }
+
+  .cube-side--top {
+    --t-r-x: 90deg;
+    --t-z: calc(var(--size-w) / 2);
+
+    width: var(--size-h);
+    height: var(--size-w);
+  }
+
+  .cube-side--bottom {
+    --t-r-x: -90deg;
+  }
+
+  .cube--transition .cube-box {
+    animation: roll var(--animaton-duration, 1s) forwards;
+  }
+
+  .cube-box {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes roll {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      transform: rotateY(-15deg) rotateX(-15deg) scale3d(0.5, 0.5, 0.5);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}

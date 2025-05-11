@@ -1,0 +1,36 @@
+{
+  "calories": 434,
+  "category": "ingredients",
+  "id": "ingredients_3l-IC1-gTc8hAte-i6a6kdWao5OabCC",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 3.8,
+      "fiber": 0,
+      "sugars": 3.8
+    },
+    "fat": {
+      "total": 44,
+      "saturated": 28,
+      "unsaturated": 12
+    },
+    "protein": 3.3
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 90,
+      "iron": 0.1,
+      "potassium": 117
+    },
+    "vitamins": {
+      "vitaminA": 320,
+      "vitaminC": 0
+    }
+  },
+  "name": "crème fraîche",
+  "source": "USDA Database",
+  "tags": [
+    "dairy",
+    "condiment",
+    "cream"
+  ]
+}

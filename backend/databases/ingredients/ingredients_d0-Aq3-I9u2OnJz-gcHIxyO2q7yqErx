@@ -1,0 +1,36 @@
+{
+  "id": "ingredients_d0-Aq3-I9u2OnJz-gcHIxyO2q7yqErx",
+  "name": "strong flour",
+  "category": "ingredients",
+  "calories": 364,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 76.31,
+      "fiber": 2.7,
+      "sugars": 0.41
+    },
+    "fat": {
+      "total": 0.98,
+      "saturated": 0.16,
+      "unsaturated": 0.21
+    },
+    "protein": 10.7
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    },
+    "minerals": {
+      "calcium": 16,
+      "iron": 1.23,
+      "potassium": 107
+    }
+  },
+  "source": "USDA FoodData Central",
+  "tags": [
+    "flour",
+    "baking",
+    "wheat"
+  ]
+}
