@@ -1,0 +1,38 @@
+{
+  "id": "ingredients_y2-X8H-21nslWUD-AdPn6p9IJZnzr96",
+  "name": "semolina",
+  "category": "ingredients",
+  "calories": 360,
+  "macronutrients": {
+    "protein": 12.68,
+    "fat": {
+      "total": 1.05,
+      "saturated": 0.15,
+      "unsaturated": 0.62
+    },
+    "carbohydrates": {
+      "total": 72.83,
+      "fiber": 3.9,
+      "sugars": 0.83
+    }
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    },
+    "minerals": {
+      "calcium": 16,
+      "iron": 1.23,
+      "potassium": 186
+    }
+  },
+  "source": "USDA FoodData Central",
+  "tags": [
+    "grain",
+    "flour",
+    "pasta",
+    "couscous",
+    "durum wheat"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "calories": 717,
+  "category": "ingredients",
+  "id": "ingredients_Ss-N9g-rPhU3ijw-0hh5eXkyIT5g4sV",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 0,
+      "total": 0
+    },
+    "fat": {
+      "saturated": 51.36,
+      "total": 81.11,
+      "unsaturated": 27.02
+    },
+    "protein": 0.85
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 24,
+      "iron": 0.02,
+      "potassium": 24
+    },
+    "vitamins": {
+      "vitaminA": 2499,
+      "vitaminC": 0
+    }
+  },
+  "name": "butter",
+  "tags": [
+    "dairy",
+    "fat",
+    "spread"
+  ]
+}

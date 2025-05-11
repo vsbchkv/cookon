@@ -1,0 +1,111 @@
+{
+  "category": "recipes",
+  "id": "recipes_R6-QeR-rmf3nl9n-5ULXEfGlXdToMO7",
+  "name": "pizza dough",
+  "author": "Gennaro Contaldo",
+  "description": "A simple and easy recipe for classic Italian pizza dough by Gennaro Contaldo, as shown on Jamie Oliver's Food Tube. This recipe yields enough dough for 4 individual pizzas.",
+  "preparationTime": {
+    "total": 2,
+    "unit": "h"
+  },
+  "source": "https://www.youtube.com/watch?v=1-SJGQ2HLp8",
+  "tags": [
+    "pizza",
+    "dough",
+    "italian",
+    "gennaro contaldo",
+    "food tube"
+  ],
+  "ingredients": [
+    {
+      "name": "Strong flour",
+      "id": "ingredients_d0-Aq3-I9u2OnJz-gcHIxyO2q7yqErx",
+      "amount": 500,
+      "unit": "g",
+      "notes": "Type \"00\" flour is recommended"
+    },
+    {
+      "name": "Salt",
+      "id": "ingredients_dN-eA3-CVyDzWeL-g8Ju05z08Uc5Z2G",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "Dry yeast",
+      "id": "ingredients_Bh-IaF-i8mUeuCc-Dbx8wu67Y8lLG6K",
+      "amount": 7,
+      "unit": "g"
+    },
+    {
+      "name": "Warm water",
+      "id": "ingredients_p2-N0Y-wOo5V3vt-cn1R9W7NU1hOwtf",
+      "amount": 325,
+      "unit": "ml"
+    },
+    {
+      "name": "Semolina",
+      "id": "ingredients_y2-X8H-21nslWUD-AdPn6p9IJZnzr96",
+      "amount": 0,
+      "unit": "g",
+      "notes": "For dusting the tray (or use breadcrumbs)"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "Combine the strong flour and salt in a large mixing bowl."
+    },
+    {
+      "step": 2,
+      "description": "In a separate jug or small bowl, mix the dry yeast with the warm water. Stir briefly to dissolve."
+    },
+    {
+      "step": 3,
+      "description": "Pour the yeast and water mixture into the centre of the flour and salt."
+    },
+    {
+      "step": 4,
+      "description": "Mix the ingredients together with a spoon or your hands until a rough dough forms."
+    },
+    {
+      "step": 5,
+      "description": "Turn the dough out onto a clean surface dusted lightly with flour."
+    },
+    {
+      "step": 6,
+      "description": "Knead the dough. If it is very sticky, add a little more flour to your hands and the surface as you work."
+    },
+    {
+      "step": 7,
+      "description": "Using the palm of your hand, knead the dough by pulling it towards you and then folding it back on itself. Repeat this action until the dough is smooth and elastic."
+    },
+    {
+      "step": 8,
+      "description": "Roll the kneaded dough lightly into a log shape."
+    },
+    {
+      "step": 9,
+      "description": "Divide the dough log into 4 equal portions using a knife or dough scraper."
+    },
+    {
+      "step": 10,
+      "description": "Shape each portion into a smooth ball by rolling and tucking the edges underneath."
+    },
+    {
+      "step": 11,
+      "description": "Dust a baking tray or sheet generously with semolina or breadcrumbs to prevent sticking."
+    },
+    {
+      "step": 12,
+      "description": "Place the dough balls onto the prepared tray, ensuring they have space to expand."
+    },
+    {
+      "step": 13,
+      "description": "Lightly dust the top of the dough balls with a little flour."
+    },
+    {
+      "step": 14,
+      "description": "Cover the tray with a damp cloth and leave the dough to prove in a warm place for at least 2 hours, or until they have doubled in size and feel light."
+    }
+  ]
+}

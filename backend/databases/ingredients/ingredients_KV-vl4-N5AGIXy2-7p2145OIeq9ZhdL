@@ -1,0 +1,35 @@
+{
+  "calories": 303,
+  "category": "ingredients",
+  "id": "ingredients_KV-vl4-N5AGIXy2-7p2145OIeq9ZhdL",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 0,
+      "total": 0
+    },
+    "fat": {
+      "saturated": 0,
+      "total": 0,
+      "unsaturated": 0
+    },
+    "protein": 77
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 20,
+      "iron": 0.5,
+      "potassium": 0
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "gelatin (unflavored)",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "protein",
+    "additive"
+  ]
+}

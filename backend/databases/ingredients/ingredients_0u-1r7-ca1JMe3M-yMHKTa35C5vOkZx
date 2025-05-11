@@ -1,0 +1,35 @@
+{
+  "calories": 260,
+  "category": "ingredients",
+  "id": "ingredients_0u-1r7-ca1JMe3M-yMHKTa35C5vOkZx",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 60,
+      "total": 67
+    },
+    "fat": {
+      "saturated": 0,
+      "total": 0,
+      "unsaturated": 0
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 20,
+      "iron": 0,
+      "potassium": 200
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "maple syrup",
+  "tags": [
+    "syrup",
+    "sweetener",
+    "maple"
+  ]
+}

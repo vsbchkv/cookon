@@ -1,0 +1,35 @@
+{
+  "calories": 290,
+  "category": "ingredients",
+  "id": "ingredients_Eo-svB-Rdyi3wCK-2QARkINBgc0K5WW",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 0,
+      "sugars": 1,
+      "total": 3
+    },
+    "fat": {
+      "saturated": 8,
+      "total": 25,
+      "unsaturated": 10
+    },
+    "protein": 13
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 20,
+      "iron": 1,
+      "potassium": 180
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "name": "pork sausage, cooked",
+  "tags": [
+    "sausage",
+    "pork",
+    "meat"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "calories": 198,
+  "category": "ingredients",
+  "id": "ingredients_no-bAc-MuI9xsUR-1429alaf9pQ7chm",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 5,
+      "sugars": 3,
+      "fiber": 0
+    },
+    "fat": {
+      "total": 19,
+      "saturated": 12,
+      "unsaturated": 0
+    },
+    "protein": 2
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 67,
+      "iron": 0,
+      "potassium": 83
+    },
+    "vitamins": {
+      "vitaminA": 600,
+      "vitaminC": 0.6
+    }
+  },
+  "name": "sour cream",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "dairy",
+    "condiment",
+    "creamy"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "calories": 2.75,
+  "category": "ingredients",
+  "id": "ingredients_Ke-k23-3vTYt0Sg-0RGlY5XrfLW8q0s",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 0.59,
+      "fiber": 0.2,
+      "sugars": 0
+    },
+    "fat": {
+      "total": 0.08,
+      "saturated": 0.02,
+      "unsaturated": 0.06
+    },
+    "protein": 0.11
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 2.57,
+      "iron": 0.19,
+      "potassium": 12.28
+    },
+    "vitamins": {
+      "vitaminA": 22,
+      "vitaminC": 0.6
+    }
+  },
+  "name": "fresh lemon thyme, chopped",
+  "tags": [
+    "herb",
+    "thyme",
+    "lemon"
+  ]
+}

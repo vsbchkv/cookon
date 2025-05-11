@@ -1,0 +1,119 @@
+@layer component {
+  .layout {
+    --text-shadow-default: var(--ts-offset-x, 0) var(--ts-offset-y, 0) var(--text-blur, 0)
+      oklch(from var(--accent-color, currentColor) l c h);
+    --glow-angle: 0;
+    --glow-spread: 20; /* 20 */
+    --glow-offset-x: 0;
+    --glow-offset-y: 0; /* 20 */
+    --duration: 0.35s;
+    --d: calc(var(--gap));
+    --layout-border-radius: 20px;
+
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'header header'
+      'content content'
+      'nav nav';
+    gap: var(--gap);
+    width: 100vw;
+    height: 100dvh;
+    padding: var(--gap);
+    text-shadow: var(--text-shadow-default);
+    color: var(--color-default);
+    background-color: transparent;
+    transition: text-shadow var(--duration);
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: fixed;
+      z-index: -1;
+      display: block;
+      width: calc(var(--glow-size) * var(--unit));
+      height: calc(var(--glow-size) * var(--unit));
+      border-radius: 50%;
+      place-self: center;
+      transition:
+        transform calc(var(--duration) + 0s) ease-in,
+        box-shadow calc(var(--duration) + 0.5s) ease-out calc(var(--duration) / 2),
+        width calc(var(--duration) + 0.5s) ease-out calc(var(--duration)),
+        height calc(var(--duration) + 0.5s) ease-out calc(var(--duration)),
+        background-color var(--duration);
+      transform-origin: center;
+      transform: rotate(calc(var(--glow-angle) * 1deg));
+      box-shadow:
+        inset calc(var(--glow-offset-x) * var(--unit, 1%)) calc(var(--glow-offset-y) * var(--unit, 1%))
+          calc(var(--glow-spread) * var(--unit, 1%))
+          oklch(from var(--accent-color) var(--glow-l, l) var(--glow-c, c) var(--glow-h, h)),
+        calc(var(--glow-offset-x) * var(--unit, 1%)) calc(var(--glow-offset-y) * var(--unit, 1%))
+          calc(var(--glow-spread) * var(--unit, 1%))
+          oklch(from var(--accent-color) var(--glow-l, l) var(--glow-c, c) var(--glow-h, h));
+
+      @media (orientation: portrait) {
+        --unit: 1lvw;
+        --glow-size: 60;
+      }
+
+      @media (orientation: landscape) {
+        --unit: 1lvh;
+        --glow-size: 50;
+      }
+    }
+  }
+
+  .logo {
+    &,
+    & > * {
+      grid-area: logo;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  }
+
+  .content,
+  .page-title {
+    background-color: var(--background-accent);
+  }
+
+  .page-title {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    flex: 0 1 auto;
+    padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
+    font-size: 1.25rem;
+    font-weight: 500;
+    place-content: end;
+    border-radius: var(--layout-border-radius);
+
+    /* border-radius: 0 0 var(--layout-border-radius) var(--layout-border-radius); */
+
+    /* border-radius: calc(var(--gap) * 10) var(--gap) 0 calc(var(--gap) * 10); */
+
+    &::after {
+      position: absolute;
+      bottom: calc(var(--gap) * -1);
+      width: 100%;
+      height: calc(var(--gap) * 2);
+      background: #fff;
+      background-color: inherit;
+    }
+  }
+
+  .header {
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    gap: var(--gap);
+  }
+
+  .content {
+    grid-area: content;
+    border-radius: var(--layout-border-radius, 0);
+    overflow: hidden;
+  }
+}

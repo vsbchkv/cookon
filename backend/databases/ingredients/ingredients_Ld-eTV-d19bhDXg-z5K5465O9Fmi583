@@ -1,0 +1,36 @@
+{
+  "calories": 250,
+  "category": "ingredients",
+  "id": "ingredients_Ld-eTV-d19bhDXg-z5K5465O9Fmi583",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 0,
+      "sugars": 0,
+      "fiber": 0
+    },
+    "fat": {
+      "total": 18,
+      "saturated": 7,
+      "unsaturated": 9
+    },
+    "protein": 21
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 15,
+      "iron": 2,
+      "potassium": 300
+    },
+    "vitamins": {
+      "vitaminA": 20,
+      "vitaminC": 0
+    }
+  },
+  "name": "beef (with bone)",
+  "source": "USDA Database",
+  "tags": [
+    "beef",
+    "meat",
+    "bone-in"
+  ]
+}

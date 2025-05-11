@@ -1,0 +1,117 @@
+{
+  "category": "recipes",
+  "id": "recipes_2v-p8G-aj7b74xd-85ZN6Es3o677ZuB",
+  "name": "shrimp pesto pasta",
+  "preparationTime": {
+    "total": 20,
+    "unit": "min"
+  },
+  "ingredients": [
+    {
+      "name": "linguine pasta",
+      "id": "pasta-linguine",
+      "amount": 250,
+      "unit": "g"
+    },
+    {
+      "name": "shrimp",
+      "id": "shrimp",
+      "amount": 250,
+      "unit": "g"
+    },
+    {
+      "name": "pesto",
+      "id": "pesto",
+      "amount": 4,
+      "unit": "tbsp"
+    },
+    {
+      "name": "garlic",
+      "id": "garlic",
+      "amount": 3,
+      "unit": "cloves"
+    },
+    {
+      "name": "butter",
+      "id": "butter",
+      "amount": 1,
+      "unit": "tbsp"
+    },
+    {
+      "name": "olive oil",
+      "id": "olive-oil",
+      "amount": 2,
+      "unit": "tbsp"
+    },
+    {
+      "name": "red pepper flakes",
+      "id": "red-pepper-flakes",
+      "amount": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "name": "parmesan cheese",
+      "id": "parmesan-cheese",
+      "amount": 20,
+      "unit": "g",
+      "notes": "For serving"
+    },
+    {
+      "name": "salt",
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch"
+    },
+    {
+      "name": "black pepper",
+      "id": "black-pepper",
+      "amount": 1,
+      "unit": "pinch"
+    },
+    {
+      "name": "pasta water",
+      "id": "pasta-water",
+      "amount": 0.25,
+      "unit": "l",
+      "notes": "Reserved from cooking pasta"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "Bring a large pot of water to a rolling boil. Add a generous amount of salt. Add the pasta and cook according to package instructions until al dente. Before draining, reserve about 1 cup (approximately 250ml) of the pasta water."
+    },
+    {
+      "step": 2,
+      "description": "While the pasta is cooking, pat the shrimp dry thoroughly with paper towels. Season the shrimp on both sides with salt and black pepper."
+    },
+    {
+      "step": 3,
+      "description": "In a large skillet, heat the butter and olive oil over medium heat. Add the minced garlic and red pepper flakes. Sauté for 30 to 60 seconds, stirring frequently, until fragrant. Be careful not to burn the garlic."
+    },
+    {
+      "step": 4,
+      "description": "Add the seasoned shrimp to the skillet in a single layer. Cook for 2-3 minutes per side, just until the shrimp turn pink and opaque and are cooked through. Do not overcook, or they will become tough."
+    },
+    {
+      "step": 5,
+      "description": "Reduce the heat to low. Add the pesto to the skillet with the shrimp. Stir gently to combine and warm the pesto through."
+    },
+    {
+      "step": 6,
+      "description": "Add the drained pasta directly to the skillet with the shrimp and pesto. Add about half a cup (approximately 125ml) of the reserved pasta water. Using tongs, toss everything together until the pasta is evenly coated in the pesto sauce. Add more pasta water if needed to achieve a smooth, creamy sauce consistency."
+    },
+    {
+      "step": 7,
+      "description": "Serve the shrimp pesto pasta immediately in bowls. Garnish each serving with freshly grated Parmesan cheese, if desired."
+    }
+  ],
+  "source": "https://www.youtube.com/watch?v=nBQZxRNGaRo",
+  "tags": [
+    "pasta",
+    "shrimp",
+    "pesto",
+    "quick",
+    "easy"
+  ]
+}

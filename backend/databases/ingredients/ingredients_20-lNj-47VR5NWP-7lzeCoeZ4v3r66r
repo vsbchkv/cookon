@@ -1,0 +1,36 @@
+{
+  "calories": 41,
+  "category": "ingredients",
+  "id": "ingredients_20-lNj-47VR5NWP-7lzeCoeZ4v3r66r",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 2.8,
+      "sugars": 4.7,
+      "total": 9.6
+    },
+    "fat": {
+      "saturated": 0.06,
+      "total": 0.2,
+      "unsaturated": 0.1
+    },
+    "protein": 0.9
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 33,
+      "iron": 0.2,
+      "potassium": 320
+    },
+    "vitamins": {
+      "vitaminA": 835,
+      "vitaminC": 5.9
+    }
+  },
+  "name": "carrots",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "vegetable",
+    "root",
+    "orange"
+  ]
+}

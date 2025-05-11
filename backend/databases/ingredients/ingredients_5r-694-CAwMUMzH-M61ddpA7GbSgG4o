@@ -1,0 +1,35 @@
+{
+  "calories": 255,
+  "category": "ingredients",
+  "id": "ingredients_5r-694-CAwMUMzH-M61ddpA7GbSgG4o",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 33,
+      "sugars": 0.6,
+      "total": 63.5
+    },
+    "fat": {
+      "saturated": 0.1,
+      "total": 3.3,
+      "unsaturated": 0.2
+    },
+    "protein": 10.4
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 45,
+      "iron": 17,
+      "potassium": 1329
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 21
+    }
+  },
+  "name": "black pepper, freshly ground",
+  "tags": [
+    "spice",
+    "pepper",
+    "ground"
+  ]
+}

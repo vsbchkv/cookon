@@ -1,0 +1,36 @@
+{
+  "calories": 75,
+  "category": "ingredients",
+  "id": "ingredients_9d-94D-kv4vLoqe-wDlgfxahNpAw0I3",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 17,
+      "sugars": 10,
+      "fiber": 3
+    },
+    "fat": {
+      "total": 0.5,
+      "saturated": 0.1,
+      "unsaturated": 0.4
+    },
+    "protein": 3
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 20,
+      "iron": 1,
+      "potassium": 400
+    },
+    "vitamins": {
+      "vitaminA": 750,
+      "vitaminC": 20
+    }
+  },
+  "name": "tomato paste",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "canned",
+    "vegetable",
+    "condiment"
+  ]
+}

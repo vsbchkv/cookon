@@ -1,0 +1,36 @@
+{
+  "calories": 78,
+  "category": "ingredients",
+  "id": "ingredients_pW-7PJ-6Ug1YTEQ-rEjpbDnGOqpAcGf",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 0.6,
+      "fiber": 0,
+      "sugars": 0.6
+    },
+    "fat": {
+      "total": 5.3,
+      "saturated": 1.6,
+      "unsaturated": 3.2
+    },
+    "protein": 6.3
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 25,
+      "iron": 0.6,
+      "potassium": 63
+    },
+    "vitamins": {
+      "vitaminA": 45,
+      "vitaminC": 0
+    }
+  },
+  "name": "free-range eggs",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "egg",
+    "protein",
+    "breakfast"
+  ]
+}

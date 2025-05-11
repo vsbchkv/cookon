@@ -1,0 +1,37 @@
+{
+  "calories": 282,
+  "category": "ingredients",
+  "id": "ingredients_Sh-R8m-p2k1lQo5-1iOntLS0p79djTJ",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 34.8,
+      "sugars": 10.4,
+      "total": 56.6
+    },
+    "fat": {
+      "saturated": 0.5,
+      "total": 17.3,
+      "unsaturated": 16.8
+    },
+    "protein": 11.9
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 148,
+      "iron": 7.8,
+      "potassium": 1949
+    },
+    "vitamins": {
+      "vitaminA": 3179,
+      "vitaminC": 76.4
+    }
+  },
+  "name": "chilli flakes",
+  "tags": [
+    "chilli",
+    "flakes",
+    "spice",
+    "vegan",
+    "vegetarian"
+  ]
+}

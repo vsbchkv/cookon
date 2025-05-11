@@ -1,0 +1,36 @@
+{
+  "calories": 43,
+  "category": "ingredients",
+  "id": "ingredients_th-IGf-7di03oiy-szmq0HH72uSmAh9",
+  "macronutrients": {
+    "carbohydrates": {
+      "fiber": 2.8,
+      "sugars": 6.76,
+      "total": 9.56
+    },
+    "fat": {
+      "saturated": 0.05,
+      "total": 0.18,
+      "unsaturated": 0
+    },
+    "protein": 1.61
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 16,
+      "iron": 0.8,
+      "potassium": 325
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 4.9
+    }
+  },
+  "name": "beets",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "vegetable",
+    "root",
+    "beetroot"
+  ]
+}

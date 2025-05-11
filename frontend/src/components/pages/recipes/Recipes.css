@@ -1,0 +1,14 @@
+@layer variation {
+  .recipes {
+    &::before {
+      --glow-size: 70;
+    }
+
+    --glow-angle: 20;
+
+    /* --glow-l: 5%;
+      --glow-l: 30%;
+      --glow-c: 100%; */
+    --accent-color: #ff8400;
+  }
+}

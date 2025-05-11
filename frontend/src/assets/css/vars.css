@@ -1,0 +1,15 @@
+@layer base {
+  :root {
+    --font-family: 'Rubik', sans-serif;
+    --gap: 8px;
+    --text-blur: 6px;
+    --color-default: oklch(from var(--color) var(--l, l) var(--c, c) var(--h, h) / var(--a, 1));
+    --ts-color-default: currentcolor;
+    --background-body: linear-gradient(
+      oklch(from var(--bg-color) var(--bg-lightness, l) c h),
+      oklch(from var(--bg-color) l c h),
+      oklch(from var(--bg-color) var(--bg-lightness, l) c h)
+    );
+    --background-accent: oklch(from var(--accent-color) var(--accent-lightness, l) c h / 0.95);
+  }
+}

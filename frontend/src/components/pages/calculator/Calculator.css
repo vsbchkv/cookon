@@ -1,0 +1,11 @@
+@layer variation {
+  .calculator {
+    --glow-angle: 20;
+
+    &::before {
+      --glow-size: 55;
+    }
+
+    --accent-color: #b03eff;
+  }
+}

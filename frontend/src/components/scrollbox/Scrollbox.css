@@ -1,0 +1,34 @@
+@layer components {
+  .scrollbox {
+    /* padding-right: calc(var(--gap)); */
+  }
+
+  .scrollbox-content {
+    overflow-y: auto;
+    max-height: 100%;
+    height: 100%;
+    padding-right: calc(var(--gap));
+    /* margin-right: calc(var(--gap) / 4); */
+
+    @supports (scrollbar-width: thin) {
+      scrollbar-width: thin;
+      scrollbar-color: currentColor #ff0;
+    }
+
+    @supports not (scrollbar-width: thin) {
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* &::-webkit-scrollbar-track {
+      background: var(--scrollbarColor, #{$defaultScrollBarColor});
+    } */
+
+      &::-webkit-scrollbar-thumb {
+        /* background-color: red; */
+        border-radius: 5px;
+        border: rem(1) solidcurrentColor;
+      }
+    }
+  }
+}

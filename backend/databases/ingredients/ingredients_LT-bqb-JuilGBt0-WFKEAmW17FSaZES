@@ -1,0 +1,36 @@
+{
+  "calories": 32,
+  "category": "ingredients",
+  "id": "ingredients_LT-bqb-JuilGBt0-WFKEAmW17FSaZES",
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 4,
+      "fiber": 2,
+      "sugars": 1
+    },
+    "fat": {
+      "total": 0.73,
+      "saturated": 0.1,
+      "unsaturated": 0.63
+    },
+    "protein": 3.3
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 61,
+      "iron": 1.6,
+      "potassium": 295
+    },
+    "vitamins": {
+      "vitaminA": 403,
+      "vitaminC": 78
+    }
+  },
+  "name": "fresh chives",
+  "source": "USDA FoodData Central",
+  "tags": [
+    "herb",
+    "vegetable",
+    "fresh"
+  ]
+}
