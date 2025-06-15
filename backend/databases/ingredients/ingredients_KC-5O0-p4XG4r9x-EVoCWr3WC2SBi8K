@@ -1,0 +1,35 @@
+{
+  "id": "ingredients_KC-5O0-p4XG4r9x-EVoCWr3WC2SBi8K",
+  "name": "granulated sugar",
+  "category": "ingredients",
+  "calories": 387,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 100,
+      "sugars": 100,
+      "fiber": 0
+    },
+    "fat": {
+      "total": 0,
+      "saturated": 0,
+      "unsaturated": 0
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 1,
+      "iron": 0.02,
+      "potassium": 2
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "tags": [
+    "sweetener",
+    "baking",
+    "refined"
+  ]
+}

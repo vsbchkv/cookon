@@ -1,0 +1,37 @@
+{
+  "id": "ingredients_6K-78B-j65LeDsn-K9NX06AsRW1BF5W",
+  "name": "all-purpose flour",
+  "category": "ingredients",
+  "calories": 364,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 76.31,
+      "fiber": 2.7,
+      "sugars": 0.27
+    },
+    "fat": {
+      "total": 0.98,
+      "saturated": 0.18,
+      "unsaturated": 0.21
+    },
+    "protein": 10.3
+  },
+  "micronutrients": {
+    "minerals": {
+      "calcium": 16,
+      "iron": 1.23,
+      "potassium": 107
+    },
+    "vitamins": {
+      "vitaminA": 0,
+      "vitaminC": 0
+    }
+  },
+  "source": "USDA FoodData Central",
+  "tags": [
+    "flour",
+    "baking",
+    "wheat",
+    "ingredient"
+  ]
+}

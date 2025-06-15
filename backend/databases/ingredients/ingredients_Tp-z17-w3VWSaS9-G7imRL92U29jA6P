@@ -1,0 +1,35 @@
+{
+  "id": "ingredients_Tp-z17-w3VWSaS9-G7imRL92U29jA6P",
+  "name": "cold unsalted butter",
+  "category": "ingredients",
+  "calories": 717,
+  "macronutrients": {
+    "fat": {
+      "total": 81.11,
+      "saturated": 51.37,
+      "unsaturated": 21.02
+    },
+    "carbohydrates": {
+      "total": 0,
+      "fiber": 0,
+      "sugars": 0
+    },
+    "protein": 0.85
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 684
+    },
+    "minerals": {
+      "calcium": 24,
+      "iron": 0.02,
+      "potassium": 24
+    }
+  },
+  "tags": [
+    "dairy",
+    "fat",
+    "baking",
+    "ingredient"
+  ]
+}

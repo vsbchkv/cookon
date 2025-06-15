@@ -1,0 +1,103 @@
+{
+  "category": "recipes",
+  "id": "recipes_Di-4vr-5XJSyJpW-e8D3d4LV5wGmt80",
+  "name": "traditional american pecan pie crust",
+  "description": "A simple and flaky butter pie crust recipe, perfect for filling with a rich pecan pie mixture.",
+  "ingredients": [
+    {
+      "name": "All-purpose flour",
+      "id": "ingredients_6K-78B-j65LeDsn-K9NX06AsRW1BF5W",
+      "amount": 180,
+      "unit": "g"
+    },
+    {
+      "name": "Unsalted butter",
+      "id": "ingredients_TF-NVa-61CYMrut-8LcJuo0CKXu4uvX",
+      "amount": 113,
+      "unit": "g",
+      "notes": "very cold, cut into 1/2 inch cubes"
+    },
+    {
+      "name": "Salt",
+      "id": "ingredients_86-cCy-80ybHTXI-2xd62gHEM6H54Wc",
+      "amount": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "name": "Granulated sugar",
+      "id": "ingredients_KC-5O0-p4XG4r9x-EVoCWr3WC2SBi8K",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "optional, for a slightly sweeter crust"
+    },
+    {
+      "name": "Ice water",
+      "id": "ingredients_Na-6We-yV50xXFx-p90atE3xII0Wq19",
+      "amount": 60,
+      "unit": "ml",
+      "notes": "approximately, add 1-2 tbsp at a time"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "In a large bowl, whisk together the flour, salt, and sugar (if using)."
+    },
+    {
+      "step": 2,
+      "description": "Add the cold butter cubes to the dry ingredients. Using a pastry blender, fork, or your fingers, cut the butter into the flour mixture until it resembles coarse crumbs with some pea-sized pieces remaining."
+    },
+    {
+      "step": 3,
+      "description": "Gradually add the ice water, 1-2 tablespoons at a time, mixing lightly with a fork until the dough just comes together. Do not overmix."
+    },
+    {
+      "step": 4,
+      "description": "Gather the dough into a ball, flatten into a disc, wrap tightly in plastic wrap, and refrigerate.",
+      "time": 30
+    },
+    {
+      "step": 5,
+      "description": "On a lightly floured surface, roll the chilled dough into a circle about 12 inches in diameter and 1/8 inch thick."
+    },
+    {
+      "step": 6,
+      "description": "Carefully transfer the rolled dough to a 9-inch pie plate. Trim and crimp the edges as desired."
+    },
+    {
+      "step": 7,
+      "description": "For best results, chill the formed crust in the pie plate for another 15-30 minutes before baking.",
+      "time": 15
+    },
+    {
+      "step": 8,
+      "description": "Preheat oven. Line the crust with parchment paper and fill with pie weights or dry beans. Bake (blind bake) for 15 minutes.",
+      "temperature": {
+        "value": 375,
+        "unit": "F"
+      },
+      "time": 15
+    },
+    {
+      "step": 9,
+      "description": "Remove the parchment paper and weights. Prick the bottom of the crust with a fork. Continue baking until the crust is lightly golden brown, about 5-10 minutes more.",
+      "temperature": {
+        "value": 375,
+        "unit": "F"
+      },
+      "time": 5
+    }
+  ],
+  "preparationTime": {
+    "total": 80,
+    "unit": "min"
+  },
+  "source": "Family Cookbook",
+  "tags": [
+    "pie crust",
+    "pastry",
+    "baking",
+    "pecan pie"
+  ],
+  "author": "Grandma's Kitchen"
+}

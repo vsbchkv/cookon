@@ -1,0 +1,63 @@
+{
+  "category": "recipes",
+  "id": "recipes_cq-8tl-6zUWKj67-tC6f0w0V4xSzORp",
+  "name": "pecan pie crust",
+  "preparationTime": {
+    "total": 40,
+    "unit": "min"
+  },
+  "ingredients": [
+    {
+      "name": "All-purpose flour",
+      "id": "ingredients_6K-78B-j65LeDsn-K9NX06AsRW1BF5W",
+      "amount": 312.5,
+      "unit": "g"
+    },
+    {
+      "name": "Salt",
+      "id": "ingredients_86-cCy-80ybHTXI-2xd62gHEM6H54Wc",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "Cold unsalted butter",
+      "id": "ingredients_Tp-z17-w3VWSaS9-G7imRL92U29jA6P",
+      "amount": 227,
+      "unit": "g"
+    },
+    {
+      "name": "Ice water",
+      "id": "ingredients_Na-6We-yV50xXFx-p90atE3xII0Wq19",
+      "amount": 120,
+      "unit": "ml"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "Add flour and salt to a food processor and pulse a few times to combine."
+    },
+    {
+      "step": 2,
+      "description": "Add the cold butter pieces and pulse about 8-10 times, until the mixture resembles coarse meal with some pea-sized pieces of butter remaining."
+    },
+    {
+      "step": 3,
+      "description": "With the food processor running, gradually add the ice water through the feed tube just until the dough comes together in clumps (you may not need all of it). Be careful not to overmix."
+    },
+    {
+      "step": 4,
+      "description": "Turn the dough out onto a lightly floured surface. Divide in half and shape each half into a disc. Wrap each disc tightly in plastic wrap and refrigerate for at least 30 minutes (or up to 2 days) before rolling out."
+    }
+  ],
+  "author": "Jennifer",
+  "source": "https://houseofnasheats.com/classic-southern-pecan-pie/",
+  "description": "A simple all-butter pie crust recipe from House of Nash Eats, adapted specifically for pecan pie.",
+  "tags": [
+    "pie",
+    "crust",
+    "pastry",
+    "baking",
+    "butter"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "name": "perfect pie crust",
+  "id": "recipes_Qs-6n4-jUPk8oq2-l79BnnuZqb8t1c8",
+  "category": "recipes",
+  "author": "Amy Nash",
+  "description": "A recipe for a flaky, tender, and easy-to-make pie crust using butter and shortening.",
+  "source": "https://houseofnasheats.com/perfect-pie-crust/",
+  "preparationTime": {
+    "total": 45,
+    "unit": "min"
+  },
+  "tags": [
+    "pie",
+    "crust",
+    "pastry",
+    "baking",
+    "dessert",
+    "basic"
+  ],
+  "ingredients": [
+    {
+      "name": "all-purpose flour",
+      "id": "ingredients_6K-78B-j65LeDsn-K9NX06AsRW1BF5W",
+      "amount": 300,
+      "unit": "g"
+    },
+    {
+      "name": "salt",
+      "id": "ingredients_86-cCy-80ybHTXI-2xd62gHEM6H54Wc",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "unsalted butter",
+      "id": "ingredients_TF-NVa-61CYMrut-8LcJuo0CKXu4uvX",
+      "amount": 227,
+      "unit": "g",
+      "notes": "cold, cut into pieces"
+    },
+    {
+      "name": "vegetable shortening",
+      "id": "",
+      "amount": 95,
+      "unit": "g",
+      "notes": "cold, cut into pieces"
+    },
+    {
+      "name": "ice water",
+      "id": "ingredients_Na-6We-yV50xXFx-p90atE3xII0Wq19",
+      "amount": 118.5,
+      "unit": "ml"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "In a large bowl, whisk together the flour and salt."
+    },
+    {
+      "step": 2,
+      "description": "Add the cold, cubed butter and shortening. Use a pastry blender or your fingers to cut the butter and shortening into the flour until the mixture resembles coarse crumbs with some pea-sized pieces of fat remaining. Avoid overworking."
+    },
+    {
+      "step": 3,
+      "description": "Gradually add the ice water, 1 tablespoon at a time, mixing gently with a fork until the dough just comes together. Avoid overmixing; the dough should look shaggy."
+    },
+    {
+      "step": 4,
+      "description": "Turn the dough out onto a lightly floured surface and divide it in half. Gently shape each half into a disc. Do not knead."
+    },
+    {
+      "step": 5,
+      "description": "Wrap each disc tightly in plastic wrap and refrigerate for at least 30 minutes, or up to 2 days.",
+      "time": 30
+    },
+    {
+      "step": 6,
+      "description": "When ready to use, remove one disc from the refrigerator and let it sit at room temperature to soften slightly.",
+      "time": 10
+    },
+    {
+      "step": 7,
+      "description": "On a lightly floured surface, roll out the dough into a 12-inch circle, about 1/8 inch thick. Gently transfer the dough to your pie plate."
+    },
+    {
+      "step": 8,
+      "description": "If blind baking, preheat oven.",
+      "temperature": {
+        "value": 375,
+        "unit": "F"
+      }
+    },
+    {
+      "step": 9,
+      "description": "Line the pie crust with parchment paper and fill with pie weights or dry beans.",
+      "temperature": {
+        "value": 375,
+        "unit": "F"
+      },
+      "time": 15
+    },
+    {
+      "step": 10,
+      "description": "Remove parchment and weights and continue baking until golden.",
+      "temperature": {
+        "value": 375,
+        "unit": "F"
+      },
+      "time": 10
+    }
+  ]
+}
