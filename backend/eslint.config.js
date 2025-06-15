@@ -12,14 +12,18 @@ export default [
   eslintPluginPrettierRecommended,
   {
     rules: {
-      semi: ["error", "always"],
-      "sort-imports": ["warn", {
-        "ignoreCase": false,
-        "ignoreDeclarationSort": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-        "allowSeparatedGroups": false
-      }]
+      quotes: ['error', 'single'],
+      semi: ['error', 'always'],
+      'sort-imports': [
+        'warn',
+        {
+          ignoreCase: false,
+          ignoreDeclarationSort: false,
+          ignoreMemberSort: false,
+          memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+          allowSeparatedGroups: false
+        }
+      ]
     }
   }
 ];
