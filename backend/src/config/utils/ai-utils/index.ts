@@ -1,5 +1,5 @@
-import { AIdependencies } from '../../dependencies/dependencies';
 import { FileDataPart, GenerateContentResult } from '@google/generative-ai';
+import { AIdependencies } from '../../dependencies/dependencies';
 
 import { ItemSchema } from '../../shared-data/types';
 
@@ -62,7 +62,7 @@ const createAIUtils = ({ GoogleGenerativeAI }: AIdependencies): AIUtils => {
     }
     ${
       params.source && params.schema?.definitions?.Recipe?.properties?.author
-        ? `* Provide author name, if avaliable in source`
+        ? '* Provide author name, if avaliable in source'
         : ''
     }
     Return ONLY valid JSON without any additional text or explanations.`

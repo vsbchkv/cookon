@@ -6,7 +6,14 @@ type FileManager = {
   write: <T extends Item | Recipe | Ingredient>(dir: string, item: T) => Promise<void>;
 };
 
-const createFileManager = ({ testAccess, resolvePath, readdir, readJson, writeFile }: Utils): FileManager => {
+const createFileManager = ({
+  testAccess,
+  resolvePath,
+  readDir,
+  readJson,
+  writeFile,
+  capitalizeString
+}: Utils): FileManager => {
   type Dirs = { readonly [key: string]: string };
   const DIRS: Dirs = {
     root: '/',
@@ -16,7 +23,7 @@ const createFileManager = ({ testAccess, resolvePath, readdir, readJson, writeFi
     schemas: './config/shared-data/schemas'
   };
 
-  const read = async <T extends Item | Recipe | Ingredient>(dir: string, id?: string) => {
+  const read = async <T extends Item | Recipe | Ingredient>(dir: string, id?: string): Promise<T[]> => {
     const dirPath = resolvePath(DIRS[dir]);
     if (!DIRS[dir] || !(await testAccess(dirPath))) {
       return [] as T[];
@@ -24,10 +31,10 @@ const createFileManager = ({ testAccess, resolvePath, readdir, readJson, writeFi
 
     if (id) {
       const filePath = resolvePath(dirPath, id);
-      return [await readJson<T>(filePath)];
+      return [(await readJson(filePath)) as T];
     } else {
-      const files = await readdir(dirPath);
-      return await Promise.all(files.map((f) => readJson<T>(resolvePath(dirPath, f))));
+      const files = await readDir(dirPath);
+      return await Promise.all(files.map((f) => readJson(resolvePath(dirPath, f)) as Promise<T>));
     }
   };
   const write = async <T extends Item | Recipe | Ingredient>(dir: string, item: T) => {
@@ -38,7 +45,7 @@ const createFileManager = ({ testAccess, resolvePath, readdir, readJson, writeFi
 
     const filePath = resolvePath(dirPath, item.id);
     const strContent = JSON.stringify(item, null, 2); // TODO: min version after tests
-    await writeFile(filePath, strContent);
+    await writeFile(filePath)(strContent);
   };
 
   return { read, write };

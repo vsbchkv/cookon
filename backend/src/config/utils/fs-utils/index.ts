@@ -1,21 +1,17 @@
-import { readFile, readdir, unlink, writeFile } from 'fs/promises';
+import { Curry, CurriedFn } from '../utils';
+import { PathLike } from 'fs';
 import { UtilsDependencies } from '../../dependencies/dependencies';
 
 type FSUtils = {
-  readFile: typeof readFile;
-  writeFile: typeof writeFile;
-  unlink: typeof unlink;
-  readdir: typeof readdir;
+  writeFile: CurriedFn<[PathLike, string | Buffer], Promise<void>>;
+  deleteFile: (path: string) => Promise<void>;
+  readDir: (path: string) => Promise<string[]>;
   testAccess: (dirPath: string) => Promise<boolean | Error>;
-  readJson: <T>(path: string) => Promise<T>;
+  readJson: (path: string) => Promise<object>;
 };
 
-const createFSutils = ({ fs }: UtilsDependencies): FSUtils => {
-  const { readFile, writeFile, access, constants } = fs;
-
-  const isValidData = <T>(data: unknown): data is T => {
-    return data !== null && typeof data === 'object';
-  };
+const createFSutils = (curry: Curry, { fs }: UtilsDependencies): FSUtils => {
+  const { readdir: fsReaddir, readFile: fsReadFile, writeFile: fsWriteFile, access, constants, unlink } = fs;
 
   const testAccess = async (dirPath: string): Promise<boolean> => {
     let bool: boolean = false;
@@ -25,21 +21,44 @@ const createFSutils = ({ fs }: UtilsDependencies): FSUtils => {
     return bool;
   };
 
-  const readJson = async <T>(path: string): Promise<T> => {
+  const readDir = async (path: string): Promise<string[]> => {
     try {
-      const parsedData = JSON.parse(await readFile(path, { encoding: 'utf8' }));
-      if (isValidData<T>(parsedData)) {
+      const files = await fsReaddir(path);
+      return files;
+    } catch {
+      throw new Error('Directory read err');
+    }
+  };
+
+  const readJson = async (path: string): Promise<object> => {
+    try {
+      const parsedData = JSON.parse(await fsReadFile(path, { encoding: 'utf8' }));
+      if (parsedData) {
         return parsedData;
       }
       throw new Error('File read err');
     } catch (err) {
-      console.log(err); // TODO: err handler
+      console.log(err);
       throw new Error('File read err');
       // return null;
     }
   };
 
-  return { readFile, writeFile, unlink, testAccess, readJson, readdir };
+  const writeFile = curry(async (path: PathLike, data: string | Buffer): Promise<void> => {
+    await fsWriteFile(path, data);
+  });
+
+  const deleteFile = async (path: string): Promise<void> => {
+    await unlink(path);
+  };
+
+  return {
+    writeFile,
+    deleteFile,
+    testAccess,
+    readJson,
+    readDir
+  };
 };
 
 export type { FSUtils };

@@ -5,14 +5,14 @@ type IdManager = {
   releaseID: (id: string) => boolean;
 };
 
-const createIDManager = ({ readdir, resolvePath }: NodeUtils): IdManager => {
+const createIDManager = ({ readDir, resolvePath }: NodeUtils): IdManager => {
   const ID_PREFIXES = ['recipes', 'ingredients'];
   const chars = '0123456789abcdefghijklmnopqrstuvwxyz';
   const parts = [2, 3, 8, 15];
   const idset = new Set<string>();
 
   (async () => {
-    const list = await Promise.all([await readdir(resolvePath('../databases/recipes'))]);
+    const list = await Promise.all([await readDir(resolvePath('../databases/recipes'))]);
     list.reduce((acc, curr) => [...acc, ...curr], []).forEach((id) => idset.add(id));
   })();
 

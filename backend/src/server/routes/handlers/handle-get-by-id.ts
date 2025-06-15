@@ -31,7 +31,7 @@ const handleGetDataById =
     //     const path = resolvePath(DIRS.databases, directory, id);
     //     if (await testAccess(path)) {
     //       if (method === 'DELETE') {
-    //         await unlink(path);
+    //         await deleteFile(path);
     //       }
     //       if (method === 'GET') {
     //         await readJson(resolvePath(`${DIRS.databases}/${directory}/${id}`))

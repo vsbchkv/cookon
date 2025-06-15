@@ -10,7 +10,7 @@ export const startServer = async (dependencies: AppDependencies): Promise<void> 
   router(server);
 
   try {
-    await server.listen({ port: 3000, host: '0.0.0.0' }, (err) => {
+    server.listen({ port: 3000, host: '0.0.0.0' }, (err) => {
       if (err) {
         logger.error(err as unknown as string); // Logger should be ready at this point
         process.exit(1);
