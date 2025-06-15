@@ -1,12 +1,12 @@
-import { JSONSchemaType } from 'ajv';
-import { Schemas } from '../../shared-data/types';
 import { AIdependencies } from '../../dependencies/dependencies';
-import { GenerateContentResult, FileDataPart } from '@google/generative-ai';
+import { FileDataPart, GenerateContentResult } from '@google/generative-ai';
+
+import { ItemSchema } from '../../shared-data/types';
 
 type AIUtils = {
   usePrompt: (
     prompt: string
-  ) => <T>(params?: { schema?: JSONSchemaType<T>; source?: string | URL; model?: string }) => Promise<string>;
+  ) => (params?: { schema?: ItemSchema; source?: string | URL; model?: string }) => Promise<string>;
   extractJsonFromString: (str: string) => object | null;
 };
 
@@ -24,7 +24,6 @@ const createAIUtils = ({ GoogleGenerativeAI }: AIdependencies): AIUtils => {
   };
 
   const { GEMINI_API_KEY = '' } = process.env;
-  console.log('::', GEMINI_API_KEY);
 
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
   const defaultModel = genAI.getGenerativeModel({ model: AI_MODELS.fast });
@@ -32,8 +31,7 @@ const createAIUtils = ({ GoogleGenerativeAI }: AIdependencies): AIUtils => {
   const thinkingModel = genAI.getGenerativeModel({ model: AI_MODELS.fastBeta });
 
   const usePrompt =
-    (prompt: string) =>
-    async <T>(params?: { schema?: JSONSchemaType<T>; source?: string | URL; model?: string }) => {
+    (prompt: string) => async (params?: { schema?: ItemSchema; source?: string | URL; model?: string }) => {
       const model = params?.source ? thinkingModel : defaultModel;
       const useAiModel = async (request: string | [string, FileDataPart]) =>
         await model.generateContent(request).then((result: GenerateContentResult) => result.response.text());
@@ -50,7 +48,7 @@ const createAIUtils = ({ GoogleGenerativeAI }: AIdependencies): AIUtils => {
         ? `- Ensure all values strictly conform to the schema types and formats
     - For nutritional data (macronutrients, micronutrients, calories):
       * Use USDA database as the primary source
-      * Include units of measurement
+      * Nutritional data per 100 gramms
       * Round numerical values to 2 decimal places`
         : ''
     }

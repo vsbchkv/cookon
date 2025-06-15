@@ -12,6 +12,7 @@ type Utils = NodeUtils &
   };
 
 const createUtils = (utilsDependencies: UtilsDependencies) => {
+  const capitalizeString = (string: string): string => string.slice(0, 1).toUpperCase() + string.slice(1) || '';
   const nodeUtils: NodeUtils = {
     ...createFSutils(utilsDependencies),
     ...createPathUtils(utilsDependencies)
@@ -19,7 +20,7 @@ const createUtils = (utilsDependencies: UtilsDependencies) => {
   const aiUtils = createAIUtils(utilsDependencies);
   const { jsonSchemas } = utilsDependencies;
   const validationUtils = createValidationUtils(utilsDependencies);
-  const utils = { ...nodeUtils, ...aiUtils, jsonSchemas, ...validationUtils };
+  const utils = { ...nodeUtils, ...aiUtils, jsonSchemas, ...validationUtils, capitalizeString };
   return utils;
 };
 

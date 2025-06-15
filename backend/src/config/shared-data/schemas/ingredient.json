@@ -1,51 +1,42 @@
 {
-  "$ref": "#/definitions/Ingredient",
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Ingredient",
   "definitions": {
     "Ingredient": {
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "calories": {
           "type": "number"
         },
-        "category": {
-          "enum": [
-            "ingredients",
-            "recipes"
-          ],
-          "type": "string"
-        },
-        "id": {
-          "type": "string"
-        },
         "macronutrients": {
-          "additionalProperties": false,
+          "type": "object",
           "properties": {
             "carbohydrates": {
-              "additionalProperties": false,
+              "type": "object",
               "properties": {
+                "total": {
+                  "type": "number"
+                },
                 "fiber": {
                   "type": "number"
                 },
                 "sugars": {
-                  "type": "number"
-                },
-                "total": {
                   "type": "number"
                 }
               },
               "required": [
                 "total"
               ],
-              "type": "object"
+              "additionalProperties": false
             },
             "fat": {
-              "additionalProperties": false,
+              "type": "object",
               "properties": {
-                "saturated": {
+                "total": {
                   "type": "number"
                 },
-                "total": {
+                "saturated": {
                   "type": "number"
                 },
                 "unsaturated": {
@@ -55,7 +46,7 @@
               "required": [
                 "total"
               ],
-              "type": "object"
+              "additionalProperties": false
             },
             "protein": {
               "type": "number"
@@ -66,28 +57,13 @@
             "fat",
             "protein"
           ],
-          "type": "object"
+          "additionalProperties": false
         },
         "micronutrients": {
-          "additionalProperties": false,
+          "type": "object",
           "properties": {
-            "minerals": {
-              "additionalProperties": false,
-              "properties": {
-                "calcium": {
-                  "type": "number"
-                },
-                "iron": {
-                  "type": "number"
-                },
-                "potassium": {
-                  "type": "number"
-                }
-              },
-              "type": "object"
-            },
             "vitamins": {
-              "additionalProperties": false,
+              "type": "object",
               "properties": {
                 "vitaminA": {
                   "type": "number"
@@ -96,22 +72,48 @@
                   "type": "number"
                 }
               },
-              "type": "object"
+              "additionalProperties": false
+            },
+            "minerals": {
+              "type": "object",
+              "properties": {
+                "iron": {
+                  "type": "number"
+                },
+                "calcium": {
+                  "type": "number"
+                },
+                "potassium": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
             }
           },
-          "type": "object"
+          "additionalProperties": false
         },
         "name": {
           "type": "string"
         },
-        "source": {
+        "id": {
           "type": "string"
         },
+        "category": {
+          "type": "string",
+          "enum": [
+            "ingredients",
+            "recipes",
+            "shopping"
+          ]
+        },
         "tags": {
+          "type": "array",
           "items": {
             "type": "string"
-          },
-          "type": "array"
+          }
+        },
+        "source": {
+          "type": "string"
         }
       },
       "required": [
@@ -120,8 +122,7 @@
         "id",
         "macronutrients",
         "name"
-      ],
-      "type": "object"
+      ]
     }
   }
 }

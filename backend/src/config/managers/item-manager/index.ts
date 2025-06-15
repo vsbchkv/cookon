@@ -1,4 +1,4 @@
-import { ItemTypes, JSONSchemaType } from '../../shared-data/types';
+import { ItemSchema, ItemTypes } from '../../shared-data/types';
 import { Categories } from '../state-manager';
 import { Utils } from '../../utils/utils';
 
@@ -9,12 +9,12 @@ type ItemManager = {
 
 const createItemManager = ({ usePrompt, jsonSchemas, extractJsonFromString, validate }: Utils) => {
   const createItemDraft = async (category: Categories, item: ItemTypes) => {
-    const schemaMap: Record<Categories, JSONSchemaType<ItemTypes>> = {
-      ingredients: jsonSchemas.ingredientSchema as JSONSchemaType<ItemTypes>,
-      recipes: jsonSchemas.recipeSchema as JSONSchemaType<ItemTypes>
+    const schemaMap: Record<Categories, ItemSchema> = {
+      ingredients: jsonSchemas.ingredientSchema as ItemSchema['Ingredient'],
+      recipes: jsonSchemas.recipeSchema as ItemSchema['Recipe']
     };
     const schema = schemaMap[category];
-    const aiAllowed = 1;
+    const aiAllowed = true;
     const isValidItem = validate(schema)(item);
     if (isValidItem) {
       return item;
@@ -22,7 +22,7 @@ const createItemManager = ({ usePrompt, jsonSchemas, extractJsonFromString, vali
       if (aiAllowed) {
         try {
           const createPromptOptions = () => {
-            const optionsObj: { schema: JSONSchemaType<ItemTypes>; source?: string } = {
+            const optionsObj: { schema: ItemSchema; source?: string } = {
               schema
             };
             if ('source' in item) {

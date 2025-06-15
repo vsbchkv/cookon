@@ -120,31 +120,26 @@ const createStateManager = async ({ fileManager, itemManager, idManager }: Manag
       .then(async ([draft, draftId]) => {
         if (draft && draftId) {
           if ('ingredients' in draft) {
-            const ingredientsList = [...draft.ingredients]
-              // TODO: rm if unused
-              // .filter((ingredient) => {
-              //   return !getItemByName('ingredients', ingredient.name);
-              // })
-              .map(async (ingredient) => {
-                const delay = new Promise((resolve) => setTimeout(() => resolve(true), 250));
-                await delay;
-                console.log(':: process', ingredient?.name);
+            const ingredientsList = [...draft.ingredients].map(async (ingredient) => {
+              const delay = new Promise((resolve) => setTimeout(() => resolve(true), 250));
+              await delay;
+              console.log(':: process', ingredient?.name);
 
-                const newEl = await createItem('ingredients', {
-                  name: ingredient.name,
-                  category,
-                  id: ((): Item['id'] => {
-                    const existing = getItemByName('ingredients', ingredient.name);
-                    if (existing && existing.id) {
-                      return existing.id;
-                    } else {
-                      return ingredient.id;
-                    }
-                  })()
-                });
-                const newId = newEl?.id || '';
-                return { ...ingredient, id: newId };
+              const newEl = await createItem('ingredients', {
+                name: ingredient.name,
+                category,
+                id: ((): Item['id'] => {
+                  const existing = getItemByName('ingredients', ingredient.name);
+                  if (existing && existing.id) {
+                    return existing.id;
+                  } else {
+                    return ingredient.id;
+                  }
+                })()
               });
+              const newId = newEl?.id || '';
+              return { ...ingredient, id: newId };
+            });
             const relatedIngredients = await Promise.all(ingredientsList);
             const newItem: ItemTypes = { ...draft, id: draftId, ingredients: relatedIngredients } as ItemTypes;
             return newItem;

@@ -1,43 +1,50 @@
 {
-  "$ref": "#/definitions/Recipe",
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Recipe",
   "definitions": {
     "Recipe": {
+      "type": "object",
       "additionalProperties": false,
       "properties": {
-        "author": {
-          "type": "string"
-        },
-        "category": {
-          "enum": [
-            "ingredients",
-            "recipes"
-          ],
-          "type": "string"
-        },
         "description": {
           "type": "string"
         },
-        "id": {
-          "type": "string"
+        "preparationTime": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "min",
+                "h"
+              ]
+            }
+          },
+          "required": [
+            "total",
+            "unit"
+          ],
+          "additionalProperties": false
         },
         "ingredients": {
+          "type": "array",
           "items": {
-            "additionalProperties": false,
+            "type": "object",
             "properties": {
-              "amount": {
-                "type": "number"
+              "name": {
+                "type": "string"
               },
               "id": {
                 "type": "string"
               },
-              "name": {
-                "type": "string"
-              },
-              "notes": {
-                "type": "string"
+              "amount": {
+                "type": "number"
               },
               "unit": {
+                "type": "string",
                 "enum": [
                   "g",
                   "l",
@@ -49,7 +56,9 @@
                   "clove",
                   "cloves",
                   "pinch"
-                ],
+                ]
+              },
+              "notes": {
                 "type": "string"
               }
             },
@@ -59,82 +68,75 @@
               "amount",
               "unit"
             ],
-            "type": "object"
-          },
-          "type": "array"
+            "additionalProperties": false
+          }
         },
         "method": {
+          "type": "array",
           "items": {
-            "additionalProperties": false,
+            "type": "object",
             "properties": {
-              "description": {
-                "type": "string"
-              },
               "step": {
                 "type": "number"
               },
+              "description": {
+                "type": "string"
+              },
+              "time": {
+                "type": "number"
+              },
               "temperature": {
-                "additionalProperties": false,
+                "type": "object",
                 "properties": {
+                  "value": {
+                    "type": "number"
+                  },
                   "unit": {
+                    "type": "string",
                     "enum": [
                       "C",
                       "F"
-                    ],
-                    "type": "string"
-                  },
-                  "value": {
-                    "type": "number"
+                    ]
                   }
                 },
                 "required": [
                   "value",
                   "unit"
                 ],
-                "type": "object"
-              },
-              "time": {
-                "type": "number"
+                "additionalProperties": false
               }
             },
             "required": [
               "step"
             ],
-            "type": "object"
-          },
-          "type": "array"
+            "additionalProperties": false
+          }
         },
-        "name": {
+        "author": {
           "type": "string"
-        },
-        "preparationTime": {
-          "additionalProperties": false,
-          "properties": {
-            "total": {
-              "type": "number"
-            },
-            "unit": {
-              "enum": [
-                "min",
-                "h"
-              ],
-              "type": "string"
-            }
-          },
-          "required": [
-            "total",
-            "unit"
-          ],
-          "type": "object"
         },
         "source": {
           "type": "string"
         },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "ingredients",
+            "recipes",
+            "shopping"
+          ]
+        },
         "tags": {
+          "type": "array",
           "items": {
             "type": "string"
-          },
-          "type": "array"
+          }
         }
       },
       "required": [
@@ -144,8 +146,7 @@
         "method",
         "name",
         "preparationTime"
-      ],
-      "type": "object"
+      ]
     }
   }
 }
