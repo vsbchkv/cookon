@@ -1,9 +1,11 @@
 import { Fragment, useEffect } from 'react';
-import { useAppDispatch } from '../../utils/hooks';
+
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
 import { routes } from './app-routes/routes';
 import { useFetchInitialDataQuery } from '../../features/data-api/data-api-slice';
 import { setData, setLoading } from '../../features/data-slice/data-slice';
+import { useAppDispatch } from '../../utils/hooks';
 
 const App: React.FC = () => {
   const router = createBrowserRouter(routes);

@@ -1,7 +1,7 @@
-import { Item } from '../../../../types';
-
 import { useParams } from 'react-router-dom';
+
 import { useFetchItemByIdQuery } from '../../../../features/data-api/data-api-slice';
+import { Item } from '../../../../shared-data/types';
 
 const Ingredient: React.FC = () => {
   const { id = '' } = useParams();

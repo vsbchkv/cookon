@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Ingredient",
+  "definitions": {
+    "Ingredient": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "calories": {
+          "type": "number"
+        },
+        "macronutrients": {
+          "type": "object",
+          "properties": {
+            "carbohydrates": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "number"
+                },
+                "fiber": {
+                  "type": "number"
+                },
+                "sugars": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "total"
+              ],
+              "additionalProperties": false
+            },
+            "fat": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "number"
+                },
+                "saturated": {
+                  "type": "number"
+                },
+                "unsaturated": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "total"
+              ],
+              "additionalProperties": false
+            },
+            "protein": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "carbohydrates",
+            "fat",
+            "protein"
+          ],
+          "additionalProperties": false
+        },
+        "micronutrients": {
+          "type": "object",
+          "properties": {
+            "vitamins": {
+              "type": "object",
+              "properties": {
+                "vitaminA": {
+                  "type": "number"
+                },
+                "vitaminC": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            },
+            "minerals": {
+              "type": "object",
+              "properties": {
+                "iron": {
+                  "type": "number"
+                },
+                "calcium": {
+                  "type": "number"
+                },
+                "potassium": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "ingredients",
+            "recipes",
+            "shopping"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "calories",
+        "category",
+        "id",
+        "macronutrients",
+        "name"
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import './Calculator.css';
 import { useCallback, useState } from 'react';
+
 import {
   useCreateItemMutation,
   useDeleteItemMutation,
@@ -44,18 +45,18 @@ const Calculator: React.FC = () => {
     <>
       <h2>Ingredients</h2>
       <form style={{ color: '#000' }}>
-        <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-        <input type="text" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)} />
-        <input type="text" placeholder="URL" value={url} onChange={(e) => setUrl(e.target.value)} />
-        <button type="button" onClick={handleCreateItem}>
+        <input type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
+        <input type='text' placeholder='Category' value={category} onChange={(e) => setCategory(e.target.value)} />
+        <input type='text' placeholder='URL' value={url} onChange={(e) => setUrl(e.target.value)} />
+        <button type='button' onClick={handleCreateItem}>
           create!
         </button>
       </form>
 
-      <button type="button" onClick={handleDeleteItem}>
+      <button type='button' onClick={handleDeleteItem}>
         Delete!
       </button>
-      <button type="button" onClick={() => handleGetItem('recipes_m8-0g6-nI5tpNpf-Cqm81rtKoBE9G6c')}>
+      <button type='button' onClick={() => handleGetItem('recipes_m8-0g6-nI5tpNpf-Cqm81rtKoBE9G6c')}>
         get!
       </button>
     </>

@@ -2,14 +2,16 @@
   :root {
     --font-family: 'Rubik', sans-serif;
     --gap: 8px;
-    --text-blur: 6px;
-    --color-default: oklch(from var(--color) var(--l, l) var(--c, c) var(--h, h) / var(--a, 1));
+    --color-default: oklch(from var(--theme-color) var(--l, l) var(--c, c) var(--h, h) / var(--a, 1));
     --ts-color-default: currentcolor;
     --background-body: linear-gradient(
-      oklch(from var(--bg-color) var(--bg-lightness, l) c h),
-      oklch(from var(--bg-color) l c h),
-      oklch(from var(--bg-color) var(--bg-lightness, l) c h)
+      oklch(from var(--theme-bg-color) var(--theme-bg-lightness, l) c h),
+      oklch(from var(--theme-bg-color) l c h),
+      oklch(from var(--theme-bg-color) var(--theme-bg-lightness, l) c h)
     );
-    --background-accent: oklch(from var(--accent-color) var(--accent-lightness, l) c h / 0.95);
+    --border-radius: calc(var(--gap) * 3);
+    --bg: oklch(from var(--theme-bg-color) l c h);
+    --bg-contrast-low: oklch(from var(--theme-bg-color) calc(l + var(--bg-lightness-shift)) 0 0);
+    --bg-contrast-high: oklch(from var(--theme-bg-color) calc(l - var(--bg-lightness-shift)) 0 0);
   }
 }

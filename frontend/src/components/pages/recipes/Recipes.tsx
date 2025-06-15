@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import { selectData, selectDataLoading } from '../../../features/data-slice/data-slice';
-import { Item } from '../../../types';
+import { Item } from '../../../shared-data/types';
 import './Recipes.css';
 
 const Recipes: React.FC = () => {
@@ -12,7 +13,11 @@ const Recipes: React.FC = () => {
     return (
       <li className="list-item" key={el.id}>
         <Link to={`/recipes/${el.id}`}>
-          <h2>{el.name}</h2>
+          {(() => {
+            if (el.name) {
+              return el.name.slice(0, 1).toUpperCase() + el.name.slice(1) || '';
+            }
+          })()}
         </Link>
       </li>
     );

@@ -1,3 +1,5 @@
+import './Shopping.css';
+
 const Shopping: React.FC = () => {
   return (
     <>

@@ -1,7 +1,9 @@
 import { useEffect, useMemo } from 'react';
+
+import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { useLocation, Outlet, Link } from 'react-router-dom';
-import { useAppDispatch } from '../../utils/hooks';
+
 import {
   selectCurrentView,
   selectCubeTransition,
@@ -9,8 +11,8 @@ import {
   selectLayoutElements,
   setLayoutElements
 } from '../../features/ui-slice/ui-slice';
+import { useAppDispatch } from '../../utils/hooks';
 import { Nav } from '../nav/Nav';
-import clsx from 'clsx';
 import './Layout.css';
 
 type LayoutViews = 'home' | 'recipes' | 'shopping' | 'calculator' | 'ingredients' | 'error';
@@ -43,8 +45,8 @@ const Layout: React.FC = () => {
   const layoutClassName = clsx('layout', currentView);
   return (
     <div className={layoutClassName}>
-      <header className="header">
-        <Link to="/" className="logo">
+      <header className='header'>
+        <Link to='/' className='logo'>
           <h1>
             {(() => {
               if (pageSlug.pagename === 'home') {
@@ -54,13 +56,13 @@ const Layout: React.FC = () => {
             })()}
           </h1>
         </Link>
-        <h2 className="page-title glow">{title}</h2>
+        <h2 className='page-title glow'>{title}</h2>
       </header>
 
-      <section className="content content--r">
+      <section className='content content--r'>
         <Outlet />
       </section>
-      <Nav view="text" setDisabled={isCubeAnimated} />
+      <Nav view='text' setDisabled={isCubeAnimated} />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { InitialData } from '../../types';
+
+import { InitialData } from '../../shared-data/types';
 
 type DataState = {
   data: null | InitialData;

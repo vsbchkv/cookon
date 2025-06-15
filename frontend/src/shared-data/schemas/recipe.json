@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Recipe",
+  "definitions": {
+    "Recipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "preparationTime": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "min",
+                "h"
+              ]
+            }
+          },
+          "required": [
+            "total",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string",
+                "enum": [
+                  "g",
+                  "l",
+                  "ml",
+                  "tsp",
+                  "tbsp",
+                  "piece",
+                  "pieces",
+                  "clove",
+                  "cloves",
+                  "pinch"
+                ]
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "id",
+              "amount",
+              "unit"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "method": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": {
+                "type": "number"
+              },
+              "description": {
+                "type": "string"
+              },
+              "time": {
+                "type": "number"
+              },
+              "temperature": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "C",
+                      "F"
+                    ]
+                  }
+                },
+                "required": [
+                  "value",
+                  "unit"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "step"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "author": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "ingredients",
+            "recipes",
+            "shopping"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "category",
+        "id",
+        "ingredients",
+        "method",
+        "name",
+        "preparationTime"
+      ]
+    }
+  }
+}

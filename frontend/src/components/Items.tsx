@@ -1,11 +1,13 @@
+import { useCallback, useState } from 'react';
+
+import { Link } from 'react-router-dom';
+
 import {
   useCreateItemMutation,
   useDeleteItemMutation,
   useFetchItemByIdQuery
 } from '../features/data-api/data-api-slice';
-import { useCallback, useState } from 'react';
-import { Item } from '../types';
-import { Link } from 'react-router-dom';
+import { Item } from '../shared-data/types';
 
 type listProps = {
   list: Item[];

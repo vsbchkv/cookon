@@ -57,18 +57,19 @@
   }
 
   .cube-side {
+    --glow-spread: 8;
     position: absolute;
     display: grid;
     width: var(--size-w, 100%);
     height: var(--size-h, 100%);
     padding: var(--gap);
-    background-color: var(--background-accent);
+    background-color: var(--bg-contrast-high);
     backface-visibility: hidden;
     transform: rotateX(var(--t-r-x, 0deg)) rotateY(var(--t-r-y, 0deg)) translateZ(var(--t-z));
     transform-style: preserve-3d;
     transition: background-color linear var(--animaton-duration, 1s);
-    border-radius: var(--layout-border-radius);
-    border: var(--gap) solid var(--background-accent);
+    border-radius: var(--border-radius);
+    border: var(--gap) solid var(--bg-contrast-low);
   }
 
   .cube-side--home {

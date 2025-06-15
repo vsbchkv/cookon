@@ -9,12 +9,14 @@
   .nav-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     gap: calc(var(--gap) * 2);
+    justify-items: center;
   }
 
   .nav-item {
-    /* padding: var(--gap); */
+    padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
+    background-color: var(--bg-contrast-high);
+    border-radius: var(--border-radius);
   }
 
   .nav-item--icon {
@@ -42,7 +44,7 @@
   .nav-icon {
     width: 100%;
     height: 100%;
-    transition: fill var(--duration) ease;
+    transition: fill var(--animation-duration) ease;
   }
 
   .nav-icon-svg {

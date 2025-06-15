@@ -1,12 +1,14 @@
 import './Cube.css';
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { useAppDispatch } from '../../utils/hooks';
-import { selectCubeTransition, setCubeTransition } from '../../features/ui-slice/ui-slice';
+
 import clsx from 'clsx';
+import { useSelector } from 'react-redux';
+
+import { selectCubeTransition, setCubeTransition } from '../../features/ui-slice/ui-slice';
+import { useAppDispatch } from '../../utils/hooks';
 import { Scrollbox } from '../scrollbox/Scrollbox';
 
-type LayoutViews = 'home' | 'recipes' | 'shopping' | 'calculator' | 'ingredients' | 'error';
+// TODO: rm or use type LayoutViews = 'home' | 'recipes' | 'shopping' | 'calculator' | 'ingredients' | 'error';
 
 enum CubeSides {
   Front = 'front',
@@ -20,7 +22,8 @@ enum CubeSides {
 const Cube: React.FC<{
   active: CubeSides;
   children: React.ReactElement[];
-}> = ({ active, children }) => {
+  scrollable?: boolean;
+}> = ({ active, children, scrollable }) => {
   const dispatch = useAppDispatch();
   const cubeTransition = useSelector(selectCubeTransition);
 
@@ -35,8 +38,9 @@ const Cube: React.FC<{
   const sides = children.map((component: React.ReactElement, index: number) => {
     const keyStr = typeof component.type === 'function' ? component.type.name?.toLowerCase() : '';
 
+    const Wrapper = scrollable ? Scrollbox : 'div';
     return (
-      <Scrollbox
+      <Wrapper
         key={keyStr}
         className={clsx(
           'cube-side',
@@ -47,13 +51,13 @@ const Cube: React.FC<{
         )}
       >
         {component}
-      </Scrollbox>
+      </Wrapper>
     );
   });
 
   return (
     <div className={clsx('cube', active && active, cubeTransition && 'cube--transition')}>
-      <div className="cube-box" onAnimationEnd={handleAnimationEnd}>
+      <div className='cube-box' onAnimationEnd={handleAnimationEnd}>
         {sides}
       </div>
     </div>

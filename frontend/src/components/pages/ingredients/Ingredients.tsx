@@ -1,8 +1,9 @@
 import './Ingredients.css';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import { selectData, selectDataLoading } from '../../../features/data-slice/data-slice';
-import { Item } from '../../../types';
+import { Item } from '../../../shared-data/types';
 
 const Ingredients: React.FC = () => {
   const isLoading = useSelector(selectDataLoading);

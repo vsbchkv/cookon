@@ -3,7 +3,7 @@ import type { JSONSchemaType } from 'ajv';
 export type Item = {
   name: string;
   id: string;
-  category: 'ingredients' | 'recipes';
+  category: 'ingredients' | 'recipes' | 'shopping';
   tags?: string[];
   source?: string; // Book or Article or URL to the dta source of the recipe
 };
@@ -59,14 +59,22 @@ export type Recipe = Item & {
     };
   }[];
   author?: string; // Author's name
+  source?: string; // Book or Article or URL to the source of the recipe
+};
+
+export type Shopping = Item & {
+  list: Recipe['ingredients'];
 };
 
 export type RecipeSchema = JSONSchemaType<Recipe>;
 export type IngredientSchema = JSONSchemaType<Ingredient>;
+export type ShoppingSchema = JSONSchemaType<Shopping>;
 export interface Schemas {
   recipeSchema: RecipeSchema;
   ingredientSchema: IngredientSchema;
+  shoppingSchema: ShoppingSchema;
 }
 
-export type ItemTypes = Recipe | Ingredient;
+export type ItemTypes = Recipe | Ingredient | Shopping;
+export type ItemSchema = JSONSchemaType<Item>;
 export type { JSONSchemaType };

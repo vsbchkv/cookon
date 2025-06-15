@@ -1,4 +1,5 @@
 import './Scrollbox.css';
+
 type ScrollboxProps = {
   children: React.ReactNode;
   className?: string;
@@ -7,7 +8,7 @@ type ScrollboxProps = {
 const Scrollbox: React.FC<ScrollboxProps> = ({ children, className = '' }) => {
   return (
     <div className={`scrollbox ${className}`}>
-      <div className="scrollbox-content">{children}</div>
+      <div className='scrollbox-content'>{children}</div>
     </div>
   );
 };

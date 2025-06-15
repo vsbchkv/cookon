@@ -1,0 +1,33 @@
+@layer components {
+  .input {
+    display: inline;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    color: inherit;
+    background: none;
+    border: none;
+  }
+
+  .input--number {
+    /* Hide arrows  Firefox */
+    @supports (-moz-appearance: textfield) {
+      & {
+        appearance: textfield;
+      }
+    }
+
+    /* Hide arrows Chrome, Safari, Edge, Opera */
+    @supports not (-moz-appearance: textfield) {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        margin: 0;
+        appearance: none;
+      }
+    }
+  }
+
+  .input-button {
+    line-height: 1;
+  }
+}

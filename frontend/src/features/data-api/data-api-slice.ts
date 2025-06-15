@@ -1,13 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+
+import { Item, InitialData } from '../../shared-data/types';
 import { createPostMutation, createDeleteMutation, createFetchByIdQuery } from '../../utils/utils';
-import { Item, InitialData } from '../../types';
 
-// type ApiResponse<T> = {
-//   data: T;
-//   // Add other potential response fields like status, message etc if needed
-// };
-
-const DATA_URL = 'http://192.168.0.15:3000/';
+const DATA_URL = 'http://192.168.0.17:3000/';
 const ENDPOINTS = {
   root: '/',
   recipes: '/recipes/'

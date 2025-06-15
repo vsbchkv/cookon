@@ -3,25 +3,27 @@
 
   @layer theme.light {
     :root {
-      --color: #222;
-      --bg-color: #ccc;
-      --accent-color: #222;
+      --theme-color: #222;
+      --theme-bg-color: oklch(from var(--theme-color) calc(l + 0.8) c h);
+      --accent-color: var(--color);
       --accent-lightness: 80%;
-      --bg-lightness: 50%;
-      --text-blur: 1px;
+      --theme-bg-lightness: 70%;
+      --theme-text-blur: 1px;
+      --bg-lightness-shift: -0.1;
     }
   }
 
   @media (prefers-color-scheme: dark) {
     @layer theme.dark {
       :root {
-        --color: #fcfcfc;
+        --theme-color: #fcfcfc;
         --alpha: 1;
-        --text-blur: 4px;
-        --bg-color: #111;
-        --bg-lightness: 30%;
-        --accent-color: #fff;
+        --theme-text-blur: 4px;
+        --theme-bg-color: oklch(from var(--theme-color) calc(l - 0.8) c h);
+        --theme-bg-lightness: 30%;
+        --accent-color: var(--color);
         --accent-lightness: 20%;
+        --bg-lightness-shift: 0.1;
       }
     }
   }

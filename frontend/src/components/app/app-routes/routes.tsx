@@ -1,23 +1,21 @@
 import { RouteObject } from 'react-router-dom';
+
+import { Cube, CubeSides } from '../../cube/Cube';
 import { Layout } from '../../layout/Layout';
-import { Home } from '../../pages/home/Home';
-import { Ingredients } from '../../pages/ingredients/Ingredients';
-import { Recipes } from '../../pages/recipes/Recipes';
-import { Shopping } from '../../pages/shopping/Shopping';
 import { Calculator } from '../../pages/calculator/Calculator';
 import { NotFound } from '../../pages/error-page/ErrorPage';
-import { Recipe } from '../../pages/recipes/recipe/Recipe';
+import { Home } from '../../pages/home/Home';
 import { Ingredient } from '../../pages/ingredients/ingredient/Ingredient';
-import { Cube, CubeSides } from '../../cube/Cube';
-import React from 'react';
+import { Ingredients } from '../../pages/ingredients/Ingredients';
+import { Recipe } from '../../pages/recipes/recipe/Recipe';
+import { Recipes } from '../../pages/recipes/Recipes';
+import { Shopping } from '../../pages/shopping/Shopping';
 
 type AppRoute = {
   path: string;
   label: string;
 };
 
-const mainViews = ['home', 'recipes', 'shopping', 'calculator', 'ingredients'] as const;
-// Define route configurations
 const mainRoutes = [
   { path: '', index: true, Component: Home },
   { path: 'recipes', Component: Recipes },
@@ -60,7 +58,7 @@ const routes: RouteObject[] = [
         path: index ? undefined : path,
         index,
         element: (
-          <Cube active={getActiveSideForRoute(path)}>
+          <Cube active={getActiveSideForRoute(path)} scrollable>
             <Home />
             <Recipes />
             <Shopping />
@@ -73,7 +71,7 @@ const routes: RouteObject[] = [
       {
         path: 'recipes/:id',
         element: (
-          <Cube active={getActiveSideForRoute('recipes/:id')}>
+          <Cube active={getActiveSideForRoute('recipes/:id')} scrollable>
             <Home />
             <Recipe />
             <Shopping />
@@ -85,7 +83,7 @@ const routes: RouteObject[] = [
       {
         path: 'ingredients/:id',
         element: (
-          <Cube active={getActiveSideForRoute('ingredients/:id')}>
+          <Cube active={getActiveSideForRoute('ingredients/:id')} scrollable>
             <Home />
             <Recipes />
             <Shopping />
