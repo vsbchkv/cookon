@@ -1,0 +1,36 @@
+{
+  "calories": 46,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 11.42,
+      "fiber": 1.4,
+      "sugars": 9.92
+    },
+    "fat": {
+      "total": 0.28,
+      "saturated": 0.02,
+      "unsaturated": 0.08
+    },
+    "protein": 0.7
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 781,
+      "vitaminC": 9.5
+    },
+    "minerals": {
+      "iron": 0.17,
+      "calcium": 6,
+      "potassium": 157
+    }
+  },
+  "name": "plums",
+  "id": "ingredients_tR-8tU-Awd9O4bM-6oabwu6HIn7C0sB",
+  "category": "ingredients",
+  "tags": [
+    "fruit",
+    "sweet",
+    "stone fruit"
+  ],
+  "source": "USDA"
+}

@@ -1,0 +1,36 @@
+{
+  "calories": 247,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 81,
+      "fiber": 53.1,
+      "sugars": 2.17
+    },
+    "fat": {
+      "total": 1.24,
+      "saturated": 0.03,
+      "unsaturated": 0.08
+    },
+    "protein": 3.98
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 75,
+      "vitaminC": 3.8
+    },
+    "minerals": {
+      "iron": 8.32,
+      "calcium": 1002,
+      "potassium": 431
+    }
+  },
+  "name": "cinnamon",
+  "id": "ingredients_z7-FsN-sFW2mbQJ-ruPlEiZXr3jh9OJ",
+  "category": "ingredients",
+  "tags": [
+    "spice",
+    "baking",
+    "flavoring"
+  ],
+  "source": "USDA Database"
+}

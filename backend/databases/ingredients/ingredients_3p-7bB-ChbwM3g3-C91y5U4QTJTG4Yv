@@ -1,0 +1,36 @@
+{
+  "calories": 143,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 0.72,
+      "fiber": 0,
+      "sugars": 0.37
+    },
+    "fat": {
+      "total": 9.51,
+      "saturated": 3.13,
+      "unsaturated": 4.06
+    },
+    "protein": 12.56
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 540,
+      "vitaminC": 0
+    },
+    "minerals": {
+      "iron": 1.75,
+      "calcium": 56,
+      "potassium": 138
+    }
+  },
+  "name": "large eggs",
+  "id": "ingredients_3p-7bB-ChbwM3g3-C91y5U4QTJTG4Yv",
+  "category": "ingredients",
+  "tags": [
+    "protein",
+    "breakfast",
+    "versatile"
+  ],
+  "source": "USDA"
+}

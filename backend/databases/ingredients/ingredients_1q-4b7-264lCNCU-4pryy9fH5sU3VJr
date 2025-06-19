@@ -1,0 +1,28 @@
+{
+  "calories": 52.63,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 26.32,
+      "fiber": 0,
+      "sugars": 0
+    },
+    "fat": {
+      "total": 0,
+      "saturated": 0,
+      "unsaturated": 0
+    },
+    "protein": 0
+  },
+  "micronutrients": {
+    "vitamins": {},
+    "minerals": {}
+  },
+  "name": "baking powder",
+  "id": "ingredients_1q-4b7-264lCNCU-4pryy9fH5sU3VJr",
+  "category": "ingredients",
+  "tags": [
+    "leavening agent",
+    "baking"
+  ],
+  "source": "USDA"
+}

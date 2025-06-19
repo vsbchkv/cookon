@@ -1,0 +1,143 @@
+{
+  "name": "plum tart",
+  "id": "recipes_6m-k12-IRU3Y20v-W3Ncp4Wqey63dIM",
+  "category": "recipes",
+  "description": "Classic plum tart recipe based on the New York Times version, featuring a moist cake base and juicy plums topped with sugar and cinnamon.",
+  "preparationTime": {
+    "total": 20,
+    "unit": "min"
+  },
+  "ingredients": [
+    {
+      "name": "Softened butter",
+      "id": "ingredients_eZ-80w-CiKP0J7K-6SE7KpuGjDNseP4",
+      "amount": 125,
+      "unit": "g"
+    },
+    {
+      "name": "Sugar",
+      "id": "ingredients_Oo-Wzl-1DESXCq1-4seryrU35j9Ac8m",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Large eggs",
+      "id": "ingredients_3p-7bB-ChbwM3g3-C91y5U4QTJTG4Yv",
+      "amount": 2,
+      "unit": "pieces"
+    },
+    {
+      "name": "All-purpose flour",
+      "id": "ingredients_6K-78B-j65LeDsn-K9NX06AsRW1BF5W",
+      "amount": 160,
+      "unit": "g"
+    },
+    {
+      "name": "Baking powder",
+      "id": "ingredients_1q-4b7-264lCNCU-4pryy9fH5sU3VJr",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": "Implied from 'разрыхлителем' (leavening agent)"
+    },
+    {
+      "name": "Salt",
+      "id": "ingredients_86-cCy-80ybHTXI-2xd62gHEM6H54Wc",
+      "amount": 1,
+      "unit": "pinch"
+    },
+    {
+      "name": "Plums",
+      "id": "ingredients_tR-8tU-Awd9O4bM-6oabwu6HIn7C0sB",
+      "amount": 8,
+      "unit": "pieces"
+    },
+    {
+      "name": "Lemon juice",
+      "id": "ingredients_Vg-JHe-5BMtk415-9YNhUYqXIzafj54",
+      "amount": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "Brown sugar",
+      "id": "ingredients_34-WRI-yFD7K3Kb-MM8LhJWr5b1564N",
+      "amount": 15,
+      "unit": "g"
+    },
+    {
+      "name": "Cinnamon",
+      "id": "ingredients_z7-FsN-sFW2mbQJ-ruPlEiZXr3jh9OJ",
+      "amount": 2,
+      "unit": "g"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "description": "In a bowl, mix the softened butter and sugar until you get a light, creamy consistency."
+    },
+    {
+      "step": 2,
+      "description": "Add the eggs one by one, whisking after each addition until combined."
+    },
+    {
+      "step": 3,
+      "description": "Sift the all-purpose flour together with baking powder and a pinch of salt into the bowl."
+    },
+    {
+      "step": 4,
+      "description": "Using a spatula, carefully fold the dry ingredients into the wet ingredients until a smooth batter forms."
+    },
+    {
+      "step": 5,
+      "description": "Grease a baking dish (fluted tart pan shown) with butter."
+    },
+    {
+      "step": 6,
+      "description": "Pour the batter into the prepared baking dish, spreading it evenly."
+    },
+    {
+      "step": 7,
+      "description": "Wash and dry the plums. Cut them in half and remove the pits."
+    },
+    {
+      "step": 8,
+      "description": "Arrange the plum halves cut-side down (skin-side up) on top of the batter. This method allows plums to release more juice into the cake, making it moist."
+    },
+    {
+      "step": 9,
+      "description": "Sprinkle the plums with lemon juice."
+    },
+    {
+      "step": 10,
+      "description": "Sprinkle the brown sugar over the plums."
+    },
+    {
+      "step": 11,
+      "description": "Generously sprinkle cinnamon over the top."
+    },
+    {
+      "step": 12,
+      "description": "Bake in a preheated oven.",
+      "time": 50,
+      "temperature": {
+        "value": 180,
+        "unit": "C"
+      }
+    },
+    {
+      "step": 13,
+      "description": "Remove from the oven and let cool slightly before serving. The tart is best served warm."
+    }
+  ],
+  "author": "Василий Емельяненко",
+  "source": "https://www.youtube.com/shorts/8yKAXR6oU24",
+  "tags": [
+    "dessert",
+    "pie",
+    "baking",
+    "fruit",
+    "plum",
+    "tart",
+    "new-york-times"
+  ]
+}

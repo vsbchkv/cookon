@@ -1,0 +1,36 @@
+{
+  "calories": 29,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 9.32,
+      "fiber": 0.3,
+      "sugars": 2.51
+    },
+    "fat": {
+      "total": 0.3,
+      "saturated": 0.04,
+      "unsaturated": 0.01
+    },
+    "protein": 0.61
+  },
+  "micronutrients": {
+    "vitamins": {
+      "vitaminA": 22,
+      "vitaminC": 53
+    },
+    "minerals": {
+      "iron": 0.06,
+      "calcium": 6,
+      "potassium": 102
+    }
+  },
+  "name": "lemon juice",
+  "id": "ingredients_Vg-JHe-5BMtk415-9YNhUYqXIzafj54",
+  "category": "ingredients",
+  "tags": [
+    "juice",
+    "lemon",
+    "citrus"
+  ],
+  "source": "USDA"
+}

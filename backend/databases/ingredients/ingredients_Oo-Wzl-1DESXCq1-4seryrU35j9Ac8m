@@ -1,0 +1,24 @@
+{
+  "calories": 387,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 100,
+      "fiber": 0,
+      "sugars": 100
+    },
+    "fat": {
+      "total": 0,
+      "saturated": 0,
+      "unsaturated": 0
+    },
+    "protein": 0
+  },
+  "micronutrients": {},
+  "name": "sugar",
+  "id": "ingredients_Oo-Wzl-1DESXCq1-4seryrU35j9Ac8m",
+  "category": "ingredients",
+  "tags": [
+    "sweetener"
+  ],
+  "source": "USDA"
+}

@@ -1,0 +1,33 @@
+{
+  "calories": 380,
+  "macronutrients": {
+    "carbohydrates": {
+      "total": 97.33,
+      "fiber": 0,
+      "sugars": 96
+    },
+    "fat": {
+      "total": 0.33,
+      "saturated": 0.008,
+      "unsaturated": 0.002
+    },
+    "protein": 0.67
+  },
+  "micronutrients": {
+    "vitamins": {},
+    "minerals": {
+      "iron": 2.3,
+      "calcium": 83,
+      "potassium": 133
+    }
+  },
+  "name": "brown sugar",
+  "id": "ingredients_34-WRI-yFD7K3Kb-MM8LhJWr5b1564N",
+  "category": "ingredients",
+  "tags": [
+    "sweetener",
+    "baking",
+    "sugar"
+  ],
+  "source": "USDA"
+}
