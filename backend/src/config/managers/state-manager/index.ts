@@ -63,6 +63,7 @@ const createStateManager = async ({ fileManager, itemManager, idManager }: Manag
 
   const currentState = await initialState();
   const getState = () => ({ ...currentState });
+  console.log(initialState);
 
   const setState = (newState: Partial<StateType>) => {
     Object.entries(newState).forEach(([key, value]) => {

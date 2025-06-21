@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { Item, InitialData } from '../../shared-data/types';
+import { Item, IndexData } from '../../shared-data/types';
 import { createPostMutation, createDeleteMutation, createFetchByIdQuery } from '../../utils/utils';
 
 const DATA_URL = 'http://192.168.0.17:3000/';
@@ -13,7 +13,7 @@ export const dataApi = createApi({
   reducerPath: 'dataApi',
   baseQuery: fetchBaseQuery({ baseUrl: DATA_URL }),
   endpoints: (builder) => ({
-    fetchInitialData: builder.query<InitialData, void>({
+    fetchInitialData: builder.query<{ success: boolean; data: IndexData }, void>({
       query: () => ENDPOINTS.root
     }),
 

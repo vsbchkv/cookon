@@ -9,15 +9,16 @@ import { useAppDispatch } from '../../utils/hooks';
 
 const App: React.FC = () => {
   const router = createBrowserRouter(routes);
-  const { data, isLoading } = useFetchInitialDataQuery();
+  const { data: appData, isLoading } = useFetchInitialDataQuery();
   const dispatch = useAppDispatch();
 
   useEffect(() => {
+    console.log(appData);
     dispatch(setLoading(isLoading));
-    if (data) {
-      dispatch(setData(data));
+    if (appData?.success && appData?.data) {
+      dispatch(setData(appData.data));
     }
-  }, [data, isLoading, dispatch]);
+  }, [appData, isLoading, dispatch]);
 
   return (
     <Fragment>

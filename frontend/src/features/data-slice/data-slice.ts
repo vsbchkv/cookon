@@ -1,9 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { InitialData } from '../../shared-data/types';
+import { IndexData } from '../../shared-data/types';
 
 type DataState = {
-  data: null | InitialData;
+  data: null | IndexData;
   isLoading: boolean;
 };
 
@@ -17,7 +17,7 @@ const dataSlice = createSlice({
   name: 'data',
   initialState,
   reducers: {
-    setData: (state, action: PayloadAction<InitialData>) => {
+    setData: (state, action: PayloadAction<IndexData>) => {
       state.data = action.payload;
     },
     setLoading: (state, action: PayloadAction<boolean>) => {

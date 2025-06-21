@@ -1,9 +1,9 @@
-import type { JSONSchemaType } from 'ajv';
+import type { JSONSchemaType } from "ajv";
 
 export type Item = {
   name: string;
   id: string;
-  category: 'ingredients' | 'recipes' | 'shopping';
+  category: "ingredients" | "recipes" | "shopping";
   tags?: string[];
   source?: string; // Book or Article or URL to the dta source of the recipe
 };
@@ -40,13 +40,23 @@ export type Recipe = Item & {
   description?: string;
   preparationTime: {
     total: number;
-    unit: 'min' | 'h';
+    unit: "min" | "h";
   };
   ingredients: {
     name: string;
     id: string;
     amount: number;
-    unit: 'g' | 'l' | 'ml' | 'tsp' | 'tbsp' | 'piece' | 'pieces' | 'clove' | 'cloves' | 'pinch';
+    unit:
+      | "g"
+      | "l"
+      | "ml"
+      | "tsp"
+      | "tbsp"
+      | "piece"
+      | "pieces"
+      | "clove"
+      | "cloves"
+      | "pinch";
     notes?: string;
   }[];
   method: {
@@ -55,7 +65,7 @@ export type Recipe = Item & {
     time?: number;
     temperature?: {
       value: number;
-      unit: 'C' | 'F';
+      unit: "C" | "F";
     };
   }[];
   author?: string; // Author's name
@@ -63,7 +73,12 @@ export type Recipe = Item & {
 };
 
 export type Shopping = Item & {
-  list: Recipe['ingredients'];
+  list: Recipe["ingredients"];
+};
+
+export type IndexData = {
+  recipes: (Item | Partial<Item>)[];
+  ingredients: (Item | Partial<Item>)[];
 };
 
 export type RecipeSchema = JSONSchemaType<Recipe>;
