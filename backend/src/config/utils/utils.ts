@@ -19,7 +19,6 @@ type Utils = {
   AIUtils &
   ValidationUtils & {
     jsonSchemas: Record<string, object>;
-    curry: Curry;
   };
 
 const createUtils = (utilsDependencies: UtilsDependencies) => {

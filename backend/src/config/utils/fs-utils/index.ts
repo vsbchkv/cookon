@@ -1,4 +1,4 @@
-import { Curry, CurriedFn } from '../utils';
+import { CurriedFn, Curry } from '../utils';
 import { PathLike } from 'fs';
 import { UtilsDependencies } from '../../dependencies/dependencies';
 

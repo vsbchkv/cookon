@@ -6,14 +6,7 @@ type FileManager = {
   write: <T extends Item | Recipe | Ingredient>(dir: string, item: T) => Promise<void>;
 };
 
-const createFileManager = ({
-  testAccess,
-  resolvePath,
-  readDir,
-  readJson,
-  writeFile,
-  capitalizeString
-}: Utils): FileManager => {
+const createFileManager = ({ testAccess, resolvePath, readDir, readJson, writeFile }: Utils): FileManager => {
   type Dirs = { readonly [key: string]: string };
   const DIRS: Dirs = {
     root: '/',
