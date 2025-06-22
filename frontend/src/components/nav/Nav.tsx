@@ -18,8 +18,8 @@ export const Nav: React.FC<NavigationProps> = ({ view, className, setDisabled })
   const links = navList.map((el) => {
     return (
       <li key={el} className={clsx('nav-item', view === 'icon' && 'nav-item--icon glow')}>
-        <Link to={setDisabled ? '#' : `/${el}`} className='nav-action' aria-disabled={setDisabled}>
-          {view === 'icon' && <Icon name={el as IconProps['name']} className='nav-icon' />}
+        <Link to={setDisabled ? '#' : `/${el}`} className="nav-action" aria-disabled={setDisabled}>
+          {view === 'icon' && <Icon name={el as IconProps['name']} className="nav-icon" />}
           <span className={clsx('nav-title', view === 'icon' && 'visually-hidden')}>{el}</span>
         </Link>
       </li>
@@ -27,8 +27,8 @@ export const Nav: React.FC<NavigationProps> = ({ view, className, setDisabled })
   });
 
   return (
-    <nav className={clsx('nav', className && className)} aria-label='Main navigation'>
-      <ul className='nav-list'>{...links}</ul>
+    <nav className={clsx('nav', className && className)} aria-label="Main navigation">
+      <ul className="nav-list">{...links}</ul>
     </nav>
   );
 };

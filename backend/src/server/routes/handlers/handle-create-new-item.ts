@@ -15,7 +15,7 @@ const handleCreateNewItem = <T extends Item>({ createItem }: StateManager) => {
       const newItem = await createItem(category, itemRequest).catch((e) => console.log(e));
       console.log('Created: ', newItem?.id);
 
-      reply.status(201).send({ message: 'Item created successfully', data: newItem });
+      reply.status(201).send({ success: true, message: 'Item created successfully', data: newItem });
     } catch (error) {
       reply.status(500).send({ error: 'Failed to create item' });
     }

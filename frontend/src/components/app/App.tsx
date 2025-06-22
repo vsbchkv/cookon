@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -20,14 +20,7 @@ const App: React.FC = () => {
     }
   }, [appData, isLoading, dispatch]);
 
-  return (
-    <Fragment>
-      <RouterProvider router={router} />
-      {/* <div className="out">
-        <div className="in"></div>
-      </div> */}
-    </Fragment>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

@@ -14,7 +14,8 @@ export default [
     rules: {
       ...pluginReact.configs.flat.recommended.rules,
       'react/react-in-jsx-scope': 'off', // Turn off the rule requiring React to be in scope
-      'prop-types': 'off',
+      'react/prop-types': 0, // Turn off the prop-types validation rule
+      'prop-types': 0,
       'jsx-quotes': ['error', 'prefer-single'] // Enforce single quotes in JSX attributes
     }
   },

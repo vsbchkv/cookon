@@ -40,7 +40,7 @@ const aiDependencies = { GoogleGenerativeAI };
 const createAppDependencies = (): AppDependencies => {
   const defaultCorsOptions: FastifyCorsOptions = {
     origin: (origin, cb) => {
-      const allowedDomains = ['http://localhost:3000', 'http://localhost:8080'];
+      const allowedDomains = ['http://localhost:3000', 'http://localhost:8080', '192.168.0.1:8080'];
       const allowedPattern: RegExp = /(:8080|:3000)$/;
       const allowedIPs: string[] = [];
 
