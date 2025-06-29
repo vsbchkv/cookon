@@ -11,7 +11,6 @@ type NavigationProps = {
   setDisabled?: boolean;
 };
 
-// const navList: string[] = ['recipes', 'shopping', 'calculator', 'ingredients'];
 const navList: string[] = ['recipes', 'shopping', 'calculator'];
 
 export const Nav: React.FC<NavigationProps> = ({ view, className, setDisabled }) => {
@@ -28,7 +27,19 @@ export const Nav: React.FC<NavigationProps> = ({ view, className, setDisabled })
 
   return (
     <nav className={clsx('nav', className && className)} aria-label="Main navigation">
-      <ul className="nav-list">{...links}</ul>
+      <ul className="nav-list">
+        <li className={clsx('nav-item', view === 'icon' && 'nav-item--icon glow')}>
+          <Link to="/add" className="nav-action" aria-disabled={setDisabled}>
+            <span className={clsx('nav-title')}>Action</span>
+          </Link>
+        </li>
+        {...links}
+        <li className={clsx('nav-item', view === 'icon' && 'nav-item--icon glow')}>
+          <Link to="/back" className="nav-action" aria-disabled={setDisabled}>
+            <span className={clsx('nav-title')}>Back</span>
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };

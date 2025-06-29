@@ -110,3 +110,34 @@
     overflow: hidden;
   }
 }
+
+@layer variation {
+  .layout-nav {
+    font-size: 0.8rem;
+    .nav-list {
+      grid-template-rows: repeat(3, 1fr);
+      gap: calc(var(--gap) / 2);
+    }
+
+    .nav-item {
+      &:first-child,
+      &:last-child {
+        grid-column: span 3;
+
+        .nav-action {
+          padding: calc(var(--gap) / 4);
+        }
+      }
+
+      &:first-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &:last-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}

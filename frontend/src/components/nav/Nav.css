@@ -3,20 +3,19 @@
     display: grid;
     grid-area: nav;
     width: 100%;
-    justify-items: center;
   }
 
   .nav-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--gap) * 2);
-    justify-items: center;
+    /* justify-items: center; */
   }
 
   .nav-item {
-    padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
     background-color: var(--bg-contrast-high);
     border-radius: var(--border-radius);
+    display: grid;
   }
 
   .nav-item--icon {
@@ -35,10 +34,12 @@
       justify-items: center;
       border-radius: inherit;
     }
+  }
 
-    .nav-action {
-      padding: var(--gap);
-    }
+  .nav-action {
+    padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
+    display: grid;
+    place-content: center;
   }
 
   .nav-icon {

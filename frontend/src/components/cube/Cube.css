@@ -40,7 +40,7 @@
     }
 
     &.top {
-      transform: rotateX(-180deg);
+      transform: rotateX(-90deg);
 
       .cube-side:not(.cube-side--top) {
         pointer-events: none;

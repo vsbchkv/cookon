@@ -21,7 +21,9 @@ const mainRoutes = [
   { path: 'recipes', Component: Recipes },
   { path: 'shopping', Component: Shopping },
   { path: 'calculator', Component: Calculator },
-  { path: 'ingredients', Component: Ingredients }
+  { path: 'ingredients', Component: Ingredients },
+  { path: 'add', Component: Ingredients },
+  { path: 'back', Component: Recipes }
 ];
 const routeToCubeSideMap = new Map([
   ['', CubeSides.Front], // Home route
@@ -30,6 +32,8 @@ const routeToCubeSideMap = new Map([
   ['shopping', CubeSides.Left],
   ['calculator', CubeSides.Right],
   ['ingredients', CubeSides.Bottom],
+  ['add', CubeSides.Top],
+  ['back', CubeSides.Back],
   // Special routes
   ['recipes/:id', CubeSides.Back],
   ['ingredients/:id', CubeSides.Bottom]

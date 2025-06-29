@@ -45,8 +45,8 @@ const Layout: React.FC = () => {
   const layoutClassName = clsx('layout', currentView);
   return (
     <div className={layoutClassName}>
-      <header className='header'>
-        <Link to='/' className='logo'>
+      <header className="header">
+        <Link to="/" className="logo">
           <h1>
             {(() => {
               if (pageSlug.pagename === 'home') {
@@ -56,13 +56,13 @@ const Layout: React.FC = () => {
             })()}
           </h1>
         </Link>
-        <h2 className='page-title glow'>{title}</h2>
+        <h2 className="page-title glow">{title}</h2>
       </header>
 
-      <section className='content content--r'>
+      <section className="content content--r">
         <Outlet />
       </section>
-      <Nav view='text' setDisabled={isCubeAnimated} />
+      <Nav view="text" className="layout-nav" setDisabled={isCubeAnimated} />
     </div>
   );
 };
